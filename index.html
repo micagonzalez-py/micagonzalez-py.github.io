@@ -1,1 +1,194 @@
-<h1> Todavía no hay nada Mica... </h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micaela González</title>
+    
+    <!-- Tipografía alternativa para 'Tungsten' desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilos generales */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f7f7f8;
+            color: #333333;
+            padding: 20px;
+        }
+
+        .contenedor {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        /* Tipografías y tamaños requeridos */
+        h1, h2, .titulo {
+            font-family: 'Tungsten', 'Bebas Neue', sans-serif;
+            font-size: 24px;
+            color: #72777d;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Cartel Hero con sombra prestada */
+        .cartel-hero {
+            background-color: #ffffff;
+            border: 2px solid #72777d;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 25px;
+            box-shadow: 14px 14px 0px #72777d;
+        }
+
+        .nombre {
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        .bajada {
+            color: #72777d;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        /* Portafotos: Forma orgánica */
+        img.foto {
+          border-radius: 62% 38% 55% 45% / 48% 58% 42% 52%;
+        }
+
+        /* Efecto: Se colorea (al pasar el mouse) */
+        img.foto {
+          filter: grayscale(1);
+          transition: filter 0.4s;
+        }
+        img.foto:hover {
+          filter: none;
+        }
+
+        /* Dimensiones y centrado de la foto */
+        img.foto {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Bloques de información */
+        .seccion {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+        .seccion h2 {
+            border-bottom: 2px solid #72777d;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .seccion p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .seccion p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Lista de contactos */
+        .contacto-lista {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .contacto-item a {
+            display: inline-block;
+            background-color: #72777d;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .contacto-item a:hover {
+            background-color: #333333;
+        }
+
+        /* Ajustes para celulares */
+        @media (max-width: 480px) {
+            .cartel-hero {
+                padding: 20px 15px;
+                box-shadow: 8px 8px 0px #72777d;
+            }
+
+            .contacto-lista {
+                flex-direction: column;
+            }
+
+            .contacto-item a {
+                text-align: center;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <!-- Cartel Hero / Presentación -->
+        <header class="cartel-hero">
+            <img class="foto" src="foto.jpg" alt="Foto de Mica">
+            <h1 class="nombre">Micaela González</h1>
+            <p class="bajada">Estudio ingeniería civil y me interesa la programación</p>
+        </header>
+
+        <!-- Sección Sobre Mí -->
+        <main class="seccion">
+            <h2>Sobre mí</h2>
+            <p>¡Hola! Soy Micaela. Me apasiona comprender cómo se diseñan y construyen las estructuras que forman parte de nuestro día a día, siempre buscando el equilibrio entre la estética, la seguridad y la funcionalidad.</p>
+            <p>A la par de la carrera de Ingeniería Civil, me adentré en el mundo de la programación. Descubrí que el código es una herramienta clave para optimizar procesos, realizar cálculos complejos y resolver problemas de forma innovadora.</p>
+            <p>Mi objetivo es conectar ambos mundos: llevar la precisión digital y la automatización del software al campo de la infraestructura y el diseño estructural.</p>
+        </main>
+
+        <!-- Sección Contacto -->
+        <footer class="seccion">
+            <h2>Contacto</h2>
+            <p>Podés escribirme o seguir mis proyectos a través de mis redes:</p>
+            <ul class="contacto-lista">
+                <li class="contacto-item">
+                    <a href="https://github.com/micagonestig" target="_blank">GitHub: micagonestig</a>
+                </li>
+                <li class="contacto-item">
+                    <a href="https://instagram.com/micagonestig" target="_blank">Instagram: micagonestig</a>
+                </li>
+                <li class="contacto-item">
+                    <a href="mailto:micagonestig@gmail.com">Email: micagonestig</a>
+                </li>
+            </ul>
+        </footer>
+
+    </div>
+
+</body>
+</html>

@@ -1,194 +1,1132 @@
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Micaela González</title>
-    
-    <!-- Tipografía alternativa para 'Tungsten' desde Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Micaela González – Consejo Directivo FIUNA 2026</title>
+  <meta name="description"
+    content="Micaela González, candidata a Representante Estudiantil Suplente ante el Consejo Directivo de la FIUNA por Ingeniería Avanza. Elecciones 23 de octubre de 2026.">
 
-    <style>
-        /* Estilos generales */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+  <!-- ============================================================
+       REDES SOCIALES (lo que se ve cuando compartís el link)
+       Cambiá la URL del sitio y de la imagen cuando lo subas.
+       ============================================================ -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Micaela González – Consejo Directivo FIUNA 2026">
+  <meta property="og:description" content="Avancemos juntos. Candidata suplente ante el Consejo Directivo por Ingeniería Avanza.">
+  <meta property="og:image" content="img/micaela.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: #f7f7f8;
-            color: #333333;
-            padding: 20px;
-        }
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23112E52'/><text x='50' y='70' font-family='Georgia,serif' font-size='46' font-weight='700' text-anchor='middle' fill='%237FD0F2'>MG</text></svg>">
 
-        .contenedor {
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 10px;
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
-        /* Tipografías y tamaños requeridos */
-        h1, h2, .titulo {
-            font-family: 'Tungsten', 'Bebas Neue', sans-serif;
-            font-size: 24px;
-            color: #72777d;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
+  <style>
+    /* ============================================================
+       PALETA — cambiá acá los colores y se actualiza todo el sitio
+       ============================================================ */
+    :root {
+      --azul: #112E52;
+      --azul-medio: #1B4479;
+      --celeste: #7FD0F2;
+      --celeste-suave: #E7F5FD;
+      --lila: #8E7BE8;
+      --lila-suave: #F0ECFC;
+      --blanco: #FFFFFF;
+      --texto: #22303F;
+      --texto-suave: #5A6779;
+      --borde: #DCE6EF;
 
-        /* Cartel Hero con sombra prestada */
-        .cartel-hero {
-            background-color: #ffffff;
-            border: 2px solid #72777d;
-            border-radius: 8px;
-            padding: 30px;
-            text-align: center;
-            margin-bottom: 25px;
-            box-shadow: 14px 14px 0px #72777d;
-        }
+      --display: 'Bricolage Grotesque', Georgia, serif;
+      --cuerpo: 'Instrument Sans', system-ui, -apple-system, sans-serif;
 
-        .nombre {
-            margin-top: 15px;
-            margin-bottom: 8px;
-        }
+      --radio: 16px;
+      --ancho: 1080px;
+    }
 
-        .bajada {
-            color: #72777d;
-            font-weight: 600;
-            font-size: 15px;
-        }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-        /* Portafotos: Forma orgánica */
-        img.foto {
-          border-radius: 62% 38% 55% 45% / 48% 58% 42% 52%;
-        }
+    html { scroll-behavior: smooth; scroll-padding-top: 76px; }
 
-        /* Efecto: Se colorea (al pasar el mouse) */
-        img.foto {
-          filter: grayscale(1);
-          transition: filter 0.4s;
-        }
-        img.foto:hover {
-          filter: none;
-        }
+    body {
+      font-family: var(--cuerpo);
+      color: var(--texto);
+      background: var(--blanco);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
 
-        /* Dimensiones y centrado de la foto */
-        img.foto {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            display: block;
-            margin: 0 auto;
-        }
+    img { max-width: 100%; display: block; }
 
-        /* Bloques de información */
-        .seccion {
-            background-color: #ffffff;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            padding: 25px;
-            margin-bottom: 20px;
-        }
+    a { color: inherit; }
 
-        .seccion h2 {
-            border-bottom: 2px solid #72777d;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
+    :focus-visible {
+      outline: 3px solid var(--lila);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
 
-        .seccion p {
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
+    .contenedor {
+      width: min(100% - 2.5rem, var(--ancho));
+      margin-inline: auto;
+    }
 
-        .seccion p:last-child {
-            margin-bottom: 0;
-        }
+    section { padding: 4.5rem 0; }
 
-        /* Lista de contactos */
-        .contacto-lista {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 10px;
-        }
+    h2 {
+      font-family: var(--display);
+      font-weight: 800;
+      font-size: clamp(1.9rem, 6vw, 2.9rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      color: var(--azul);
+    }
 
-        .contacto-item a {
-            display: inline-block;
-            background-color: #72777d;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-            font-size: 14px;
-            font-weight: bold;
-            transition: background-color 0.2s;
-        }
+    h3 {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 1.25rem;
+      line-height: 1.25;
+      color: var(--azul);
+    }
 
-        .contacto-item a:hover {
-            background-color: #333333;
-        }
+    .bajada {
+      margin-top: 1rem;
+      max-width: 60ch;
+      color: var(--texto-suave);
+      font-size: 1.05rem;
+    }
 
-        /* Ajustes para celulares */
-        @media (max-width: 480px) {
-            .cartel-hero {
-                padding: 20px 15px;
-                box-shadow: 8px 8px 0px #72777d;
-            }
+    /* ---------- BOTONES ---------- */
+    .boton, .boton-borde {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-family: var(--cuerpo);
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.9rem 1.6rem;
+      border-radius: 999px;
+      border: 2px solid transparent;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .15s ease, background .15s ease, color .15s ease;
+    }
 
-            .contacto-lista {
-                flex-direction: column;
-            }
+    .boton { background: var(--celeste); color: var(--azul); }
+    .boton:hover { background: var(--blanco); }
 
-            .contacto-item a {
-                text-align: center;
-                display: block;
-            }
-        }
-    </style>
+    .boton-borde { background: transparent; color: var(--blanco); border-color: rgba(255,255,255,.55); }
+    .boton-borde:hover { border-color: var(--celeste); color: var(--celeste); }
+
+    .boton-azul { background: var(--azul); color: var(--blanco); }
+    .boton-azul:hover { background: var(--azul-medio); }
+
+    /* ---------- NAV ---------- */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.75rem 1.25rem;
+      background: rgba(17, 46, 82, .96);
+      backdrop-filter: blur(8px);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      color: var(--blanco);
+    }
+
+    .nav-logo-img {
+      height: 38px;
+      width: 38px;
+      object-fit: contain;
+      border-radius: 9px;
+      background: var(--blanco);
+      padding: 3px;
+    }
+
+    .nav-logo-texto {
+      font-family: var(--display);
+      font-weight: 800;
+      font-size: 1.02rem;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+
+    .nav-logo-sub {
+      display: block;
+      font-family: var(--cuerpo);
+      font-weight: 500;
+      font-size: 0.68rem;
+      letter-spacing: 0.06em;
+      color: var(--celeste);
+    }
+
+    .nav-links { display: none; list-style: none; gap: 1.6rem; }
+
+    .nav-links a {
+      color: var(--blanco);
+      text-decoration: none;
+      font-size: 0.93rem;
+      font-weight: 500;
+      opacity: .85;
+    }
+
+    .nav-links a:hover { opacity: 1; color: var(--celeste); }
+
+    .nav-cta {
+      display: none;
+      background: var(--celeste);
+      color: var(--azul);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+    }
+
+    .hamburguesa {
+      background: none;
+      border: 0;
+      width: 44px; height: 40px;
+      display: flex; flex-direction: column;
+      justify-content: center; gap: 5px;
+      cursor: pointer;
+    }
+
+    .hamburguesa span {
+      display: block; height: 2px; width: 24px;
+      background: var(--blanco); border-radius: 2px;
+      transition: transform .25s ease, opacity .2s ease;
+    }
+
+    .hamburguesa.activo span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburguesa.activo span:nth-child(2) { opacity: 0; }
+    .hamburguesa.activo span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .menu-movil {
+      position: fixed;
+      inset: 0;
+      z-index: 99;
+      background: var(--azul);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 5rem 2rem 2rem;
+      transform: translateX(100%);
+      transition: transform .3s ease;
+    }
+
+    .menu-movil.abierto { transform: translateX(0); }
+
+    .menu-movil a {
+      color: var(--blanco);
+      text-decoration: none;
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 1.5rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+
+    .menu-movil .boton { margin-top: 1.5rem; }
+
+    /* ---------- HERO ---------- */
+    #hero {
+      background: var(--azul);
+      color: var(--blanco);
+      padding: 7rem 0 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #hero::after {
+      content: "";
+      position: absolute;
+      width: 60vw; height: 60vw;
+      max-width: 520px; max-height: 520px;
+      right: -18vw; top: -12vw;
+      background: radial-gradient(circle, rgba(142,123,232,.38), transparent 68%);
+      pointer-events: none;
+    }
+
+    .hero-grid { display: grid; gap: 2rem; position: relative; z-index: 1; }
+
+    .hero-sello {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(127, 208, 242, .14);
+      border: 1px solid rgba(127, 208, 242, .4);
+      color: var(--celeste);
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+    }
+
+    .hero h1 {
+      font-family: var(--display);
+      font-weight: 800;
+      font-size: clamp(2.6rem, 13vw, 5.4rem);
+      line-height: 0.92;
+      letter-spacing: -0.035em;
+      margin: 1.2rem 0 0.4rem;
+    }
+
+    .hero h1 .linea2 { color: var(--celeste); display: block; }
+
+    .hero-nombre {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--blanco);
+      margin-top: 1.2rem;
+    }
+
+    .hero-cargo {
+      color: rgba(255,255,255,.72);
+      font-size: 1rem;
+      max-width: 34ch;
+    }
+
+    .hero-acciones {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.8rem;
+    }
+
+    .hero-foto {
+      position: relative;
+      border-radius: var(--radio);
+      overflow: hidden;
+      aspect-ratio: 4 / 5;
+      background: linear-gradient(150deg, var(--azul-medio), var(--lila));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-foto img { width: 100%; height: 100%; object-fit: cover; }
+
+    .foto-fallback {
+      font-family: var(--display);
+      font-weight: 800;
+      font-size: 4rem;
+      color: rgba(255,255,255,.35);
+      letter-spacing: 0.05em;
+    }
+
+    /* ---------- CUENTA REGRESIVA ---------- */
+    #cuenta {
+      background: var(--celeste);
+      color: var(--azul);
+      padding: 2.2rem 0;
+    }
+
+    .cuenta-inner { display: grid; gap: 1.2rem; align-items: center; }
+
+    .cuenta-titulo {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 1.1rem;
+      line-height: 1.3;
+    }
+
+    .cuenta-numeros { display: flex; gap: 0.5rem; }
+
+    .cuenta-bloque {
+      background: var(--blanco);
+      border-radius: 12px;
+      padding: 0.7rem 0.5rem;
+      text-align: center;
+      flex: 1;
+      min-width: 64px;
+    }
+
+    .cuenta-bloque span {
+      display: block;
+      font-family: var(--display);
+      font-weight: 800;
+      font-size: clamp(1.5rem, 7vw, 2.1rem);
+      line-height: 1;
+      color: var(--azul);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .cuenta-bloque small {
+      font-size: 0.7rem;
+      color: var(--texto-suave);
+      font-weight: 500;
+    }
+
+    /* ---------- SOBRE MÍ ---------- */
+    #sobre { background: var(--blanco); }
+
+    .sobre-grid { display: grid; gap: 2.5rem; margin-top: 2rem; }
+
+    .sobre-texto p { margin-bottom: 1rem; color: var(--texto-suave); }
+
+    .sobre-texto p:first-child {
+      color: var(--texto);
+      font-size: 1.15rem;
+      font-weight: 500;
+    }
+
+    .datos-rapidos {
+      display: grid;
+      gap: 0.75rem;
+      background: var(--celeste-suave);
+      border-radius: var(--radio);
+      padding: 1.5rem;
+      align-content: start;
+    }
+
+    .dato { display: flex; gap: 0.8rem; align-items: baseline; }
+
+    .dato-valor {
+      font-family: var(--display);
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: var(--azul);
+      min-width: 2.2rem;
+    }
+
+    .dato-texto { font-size: 0.93rem; color: var(--texto-suave); line-height: 1.4; }
+
+    /* trayectoria */
+    .trayectoria { margin-top: 2.5rem; }
+
+    .tray-grupo { border-top: 1px solid var(--borde); padding: 1.4rem 0; }
+
+    .tray-grupo h3 { margin-bottom: 0.8rem; font-size: 1.05rem; }
+
+    .tray-lista { list-style: none; display: grid; gap: 0.55rem; }
+
+    .tray-lista li {
+      display: grid;
+      grid-template-columns: 8px 1fr;
+      gap: 0.8rem;
+      align-items: baseline;
+      font-size: 0.95rem;
+      color: var(--texto-suave);
+    }
+
+    .tray-lista li::before {
+      content: "";
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--lila);
+      display: block;
+      transform: translateY(-2px);
+    }
+
+    .tray-oculto { display: none; }
+    .trayectoria.expandida .tray-oculto { display: block; }
+
+    .ver-mas {
+      margin-top: 1.2rem;
+      background: none;
+      border: 2px solid var(--borde);
+      color: var(--azul);
+      font-family: var(--cuerpo);
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.7rem 1.4rem;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+
+    .ver-mas:hover { border-color: var(--lila); color: var(--lila); }
+
+    /* ---------- PROPUESTAS ---------- */
+    #propuestas { background: var(--lila-suave); }
+
+    .props-grid {
+      display: grid;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .prop-card {
+      background: var(--blanco);
+      border-radius: var(--radio);
+      padding: 1.6rem;
+      border-left: 5px solid var(--lila);
+    }
+
+    .prop-card h3 { margin-bottom: 0.5rem; }
+
+    .prop-card p { color: var(--texto-suave); font-size: 0.97rem; }
+
+    .prop-aviso {
+      margin-top: 1.5rem;
+      background: var(--blanco);
+      border: 2px dashed var(--lila);
+      border-radius: var(--radio);
+      padding: 1.5rem;
+      display: grid;
+      gap: 1rem;
+      justify-items: start;
+    }
+
+    .prop-aviso p { color: var(--texto-suave); max-width: 55ch; }
+
+    /* ---------- CONSEJO ---------- */
+    #consejo { background: var(--azul); color: var(--blanco); }
+
+    #consejo h2 { color: var(--blanco); }
+
+    #consejo .bajada { color: rgba(255,255,255,.75); }
+
+    .consejo-grid { display: grid; gap: 1rem; margin-top: 2rem; }
+
+    .consejo-card {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: var(--radio);
+      padding: 1.6rem;
+    }
+
+    .consejo-card h3 { color: var(--celeste); margin-bottom: 0.6rem; }
+
+    .consejo-card p { color: rgba(255,255,255,.78); font-size: 0.97rem; }
+
+    /* ---------- VOTACIÓN ---------- */
+    #votacion { background: var(--blanco); }
+
+    .voto-caja {
+      background: var(--celeste-suave);
+      border-radius: var(--radio);
+      padding: 2rem;
+      display: grid;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .voto-fila { display: grid; gap: 0.25rem; }
+
+    .voto-etiqueta { font-size: 0.85rem; color: var(--texto-suave); font-weight: 500; }
+
+    .voto-dato {
+      font-family: var(--display);
+      font-weight: 800;
+      font-size: 1.45rem;
+      color: var(--azul);
+      line-height: 1.2;
+    }
+
+    /* ---------- FAQ ---------- */
+    #faq { background: var(--blanco); border-top: 1px solid var(--borde); }
+
+    .faq-lista { margin-top: 2rem; display: grid; }
+
+    details {
+      border-bottom: 1px solid var(--borde);
+      padding: 1.15rem 0;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 1.08rem;
+      color: var(--azul);
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary::after {
+      content: "+";
+      font-size: 1.5rem;
+      color: var(--lila);
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    details[open] summary::after { content: "–"; }
+
+    details p {
+      margin-top: 0.8rem;
+      color: var(--texto-suave);
+      font-size: 0.97rem;
+      max-width: 68ch;
+    }
+
+    /* ---------- SUMATE ---------- */
+    #sumate { background: var(--azul); color: var(--blanco); text-align: center; }
+
+    #sumate h2 { color: var(--blanco); }
+
+    #sumate .bajada { color: rgba(255,255,255,.75); margin-inline: auto; }
+
+    .sumate-acciones {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: var(--azul);
+      color: rgba(255,255,255,.55);
+      text-align: center;
+      padding: 2.5rem 1.5rem 3rem;
+      border-top: 1px solid rgba(255,255,255,.12);
+      font-size: 0.88rem;
+    }
+
+    .footer-nombre {
+      font-family: var(--display);
+      font-weight: 800;
+      font-size: 1.3rem;
+      color: var(--blanco);
+      margin-bottom: 0.4rem;
+    }
+
+    /* ---------- MODAL ---------- */
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      background: rgba(17,46,82,.75);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .modal.abierto { display: flex; }
+
+    .modal-caja {
+      background: var(--blanco);
+      border-radius: var(--radio);
+      padding: 1.8rem;
+      width: min(100%, 620px);
+      max-height: 88vh;
+      overflow-y: auto;
+      position: relative;
+    }
+
+    .modal-cerrar {
+      position: absolute;
+      top: 0.8rem; right: 0.9rem;
+      background: none; border: 0;
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: var(--texto-suave);
+      line-height: 1;
+    }
+
+    .modal-caja h3 { margin-bottom: 0.6rem; font-size: 1.4rem; }
+
+    .modal-caja p { color: var(--texto-suave); margin-bottom: 1.2rem; }
+
+    .modal-caja iframe { width: 100%; height: 520px; border: 0; }
+
+    /* ---------- BOTÓN FLOTANTE WHATSAPP ---------- */
+    .flotante {
+      position: fixed;
+      right: 1rem; bottom: 1rem;
+      z-index: 90;
+      background: #25D366;
+      color: #fff;
+      border-radius: 999px;
+      padding: 0.8rem 1.1rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,.2);
+    }
+
+    .flotante svg { width: 20px; height: 20px; fill: currentColor; }
+
+    /* ---------- ESCRITORIO ---------- */
+    @media (min-width: 820px) {
+      section { padding: 6rem 0; }
+
+      .nav-links, .nav-cta { display: flex; }
+      .hamburguesa { display: none; }
+
+      #hero { padding: 9rem 0 5rem; }
+
+      .hero-grid {
+        grid-template-columns: 1.15fr 0.85fr;
+        align-items: center;
+        gap: 3.5rem;
+      }
+
+      .hero-foto { order: 2; }
+
+      .cuenta-inner { grid-template-columns: auto 1fr; gap: 2.5rem; }
+      .cuenta-titulo { font-size: 1.25rem; max-width: 18ch; }
+      .cuenta-numeros { justify-content: flex-end; }
+      .cuenta-bloque { min-width: 92px; flex: 0 0 auto; }
+
+      .sobre-grid { grid-template-columns: 1.4fr 0.9fr; }
+
+      .trayectoria { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 3rem; }
+      .tray-grupo:nth-child(-n+2) { border-top: 0; }
+
+      .props-grid { grid-template-columns: repeat(3, 1fr); }
+
+      .consejo-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .voto-caja { grid-template-columns: repeat(3, 1fr); padding: 2.5rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
 </head>
+
 <body>
 
-    <div class="contenedor">
+  <!-- ===================== NAV ===================== -->
+  <nav aria-label="Menú principal">
+    <a href="#hero" class="nav-logo">
+      <!-- LOGO: reemplazá img/logo-ingenieria-avanza.png por tu archivo -->
+      <img src="img/logo-ingenieria-avanza.png" alt="Ingeniería Avanza" class="nav-logo-img"
+        onerror="this.style.display='none'">
+      <span class="nav-logo-texto">
+        Micaela González
+        <span class="nav-logo-sub">Ingeniería Avanza</span>
+      </span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#sobre">Quién soy</a></li>
+      <li><a href="#propuestas">Propuestas</a></li>
+      <li><a href="#consejo">El Consejo</a></li>
+      <li><a href="#votacion">Cómo votar</a></li>
+      <li><a href="#faq">Preguntas</a></li>
+    </ul>
+    <a href="#sumate" class="nav-cta">Sumate</a>
+    <button class="hamburguesa" id="hamburguesa" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-        <!-- Cartel Hero / Presentación -->
-        <header class="cartel-hero">
-            <img class="foto" src="foto.png" alt="Foto de Mica">
-            <h1 class="nombre">Micaela González</h1>
-            <p class="bajada">Estudio ingeniería civil y me interesa la programación</p>
-        </header>
+  <div class="menu-movil" id="menuMovil">
+    <a href="#sobre">Quién soy</a>
+    <a href="#propuestas">Propuestas</a>
+    <a href="#consejo">El Consejo Directivo</a>
+    <a href="#votacion">Cómo votar</a>
+    <a href="#faq">Preguntas frecuentes</a>
+    <a href="#sumate" class="boton">Sumate a la campaña</a>
+  </div>
 
-        <!-- Sección Sobre Mí -->
-        <main class="seccion">
-            <h2>Sobre mí</h2>
-            <p>¡Hola! Soy Micaela. Me apasiona comprender cómo se diseñan y construyen las estructuras que forman parte de nuestro día a día, siempre buscando el equilibrio entre la estética, la seguridad y la funcionalidad.</p>
-            <p>A la par de la carrera de Ingeniería Civil, me adentré en el mundo de la programación. Descubrí que el código es una herramienta clave para optimizar procesos, realizar cálculos complejos y resolver problemas de forma innovadora.</p>
-            <p>Mi objetivo es conectar ambos mundos: llevar la precisión digital y la automatización del software al campo de la infraestructura y el diseño estructural.</p>
-        </main>
-
-        <!-- Sección Contacto -->
-        <footer class="seccion">
-            <h2>Contacto</h2>
-            <p>Podés escribirme o seguir mis proyectos a través de mis redes:</p>
-            <ul class="contacto-lista">
-                <li class="contacto-item">
-                    <a href="https://github.com/micagonestig" target="_blank">GitHub: micagonestig</a>
-                </li>
-                <li class="contacto-item">
-                    <a href="https://instagram.com/micagonestig" target="_blank">Instagram: micagonestig</a>
-                </li>
-                <li class="contacto-item">
-                    <a href="mailto:micagonestig@gmail.com">Email: micagonestig</a>
-                </li>
-            </ul>
-        </footer>
-
+  <!-- ===================== HERO ===================== -->
+  <header id="hero" class="hero">
+    <div class="contenedor hero-grid">
+      <div>
+        <span class="hero-sello">Elecciones FIUNA · 23 de octubre</span>
+        <h1>Avancemos<span class="linea2">juntos</span></h1>
+        <p class="hero-nombre">Micaela González</p>
+        <p class="hero-cargo">Candidata a Representante Estudiantil Suplente ante el Consejo Directivo por Ingeniería
+          Avanza.</p>
+        <div class="hero-acciones">
+          <a href="#sumate" class="boton">Sumate a la campaña</a>
+          <a href="#propuestas" class="boton-borde">Ver propuestas</a>
+        </div>
+      </div>
+      <div class="hero-foto">
+        <!-- FOTO: reemplazá img/micaela.jpg por tu foto (vertical, 4:5, mínimo 800px de ancho) -->
+        <img src="img/micaela.jpg" alt="Micaela González, candidata a Representante Estudiantil Suplente"
+          onerror="this.remove()">
+        <span class="foto-fallback" aria-hidden="true">MG</span>
+      </div>
     </div>
+  </header>
+
+  <!-- ===================== CUENTA REGRESIVA ===================== -->
+  <section id="cuenta" aria-label="Cuenta regresiva a las elecciones">
+    <div class="contenedor cuenta-inner">
+      <p class="cuenta-titulo">Falta para elegir a tus representantes</p>
+      <div class="cuenta-numeros">
+        <div class="cuenta-bloque"><span id="cd-dias">—</span><small>días</small></div>
+        <div class="cuenta-bloque"><span id="cd-horas">—</span><small>horas</small></div>
+        <div class="cuenta-bloque"><span id="cd-min">—</span><small>min</small></div>
+        <div class="cuenta-bloque"><span id="cd-seg">—</span><small>seg</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE MÍ ===================== -->
+  <section id="sobre">
+    <div class="contenedor">
+      <h2>Quién soy</h2>
+      <div class="sobre-grid">
+        <div class="sobre-texto">
+          <p>Soy Micaela González, estudiante de Ingeniería Civil y de Ingeniería Electrónica en la FIUNA.</p>
+          <p>Desde que entré a la facultad estuve del lado de la organización: delegada de curso, auxiliar de cátedra,
+            voluntaria en cursillos y padrinazgos, y dirigente en el Centro de Estudiantes y en IEEE. Todo eso me enseñó
+            algo simple: los problemas de la facultad se resuelven cuando alguien se sienta en la mesa donde se deciden
+            las cosas y lleva lo que el resto está viviendo.</p>
+          <p>El Consejo Directivo es esa mesa. Me postulo como suplente para acompañar ese trabajo, estar cuando haga
+            falta y mantener el canal abierto entre los estudiantes y las decisiones que nos afectan.</p>
+        </div>
+        <aside class="datos-rapidos">
+          <div class="dato">
+            <span class="dato-valor">2</span>
+            <span class="dato-texto">carreras en curso: Ingeniería Civil (5.º semestre) e Ingeniería Electrónica (4.º)</span>
+          </div>
+          <div class="dato">
+            <span class="dato-valor">3</span>
+            <span class="dato-texto">años representando cursos y equipos dentro de la facultad</span>
+          </div>
+          <div class="dato">
+            <span class="dato-valor">+5</span>
+            <span class="dato-texto">organizaciones estudiantiles y voluntariados en los que participo</span>
+          </div>
+        </aside>
+      </div>
+
+      <div class="trayectoria" id="trayectoria">
+        <div class="tray-grupo">
+          <h3>Representación estudiantil</h3>
+          <ul class="tray-lista">
+            <li>Delegada de 5.º semestre, Ingeniería Civil (2026/02)</li>
+            <li>Sub-delegada de 2.º semestre, Ingeniería Civil (2025/01)</li>
+            <li>Subsecretaria de Extensión del CEI (2026-2027)</li>
+            <li>Subsecretaria de Acción Social del CEI (2025-2026)</li>
+          </ul>
+        </div>
+
+        <div class="tray-grupo">
+          <h3>Academia y docencia</h3>
+          <ul class="tray-lista">
+            <li>Auxiliar de la cátedra de Álgebra Lineal (2026/01)</li>
+            <li>Expositora en el X Encuentro de Investigadores de la Sociedad Científica del Paraguay (2025)</li>
+            <li>Profesora voluntaria del Cursillo Intensivo Gratuito Becas Gobierno del Paraguay (2025 y 2026)</li>
+            <li>Voluntaria del programa Padrinos para ingresantes (2026)</li>
+          </ul>
+        </div>
+
+        <div class="tray-grupo tray-oculto">
+          <h3>IEEE UNA</h3>
+          <ul class="tray-lista">
+            <li>Vicepresidenta de la RAS IEEE UNA (2026-2027)</li>
+            <li>Comités de Proyectos, Cursos y Charlas de la RAS IEEE UNA (2025-2026)</li>
+            <li>Miembro del grupo de afinidad Women in Engineering (WIE) IEEE UNA desde 2025</li>
+          </ul>
+        </div>
+
+        <div class="tray-grupo tray-oculto">
+          <h3>Deporte y cultura</h3>
+          <ul class="tray-lista">
+            <li>Delegada del equipo de Básquet Femenino en los Juegos Universitarios desde 2025</li>
+            <li>Profesora elemental de danza paraguaya y española desde 2022</li>
+          </ul>
+        </div>
+
+        <div class="tray-grupo tray-oculto">
+          <h3>Antes de la facultad</h3>
+          <ul class="tray-lista">
+            <li>Vicepresidenta del Centro de Estudiantes del Colegio Nacional San Roque González de Santacruz, Coronel
+              Oviedo</li>
+            <li>Secretaria de Actas por Asamblea en la Federación de Estudiantes Secundarios Ovetenses (F.E.S.O., 2021)</li>
+            <li>Ex JT de OMAPA</li>
+            <li>Mención de Honor en la Olimpiada de Mayo (olimpiada internacional de matemática)</li>
+          </ul>
+        </div>
+      </div>
+      <button class="ver-mas" id="verMas" aria-expanded="false" aria-controls="trayectoria">Ver trayectoria completa</button>
+    </div>
+  </section>
+
+  <!-- ===================== PROPUESTAS =====================
+       Cambiá los títulos y textos de las tres tarjetas cuando tengas
+       las propuestas cerradas. Podés agregar más copiando un bloque
+       <div class="prop-card"> ... </div> completo.
+       ====================================================== -->
+  <section id="propuestas">
+    <div class="contenedor">
+      <h2>Propuestas</h2>
+      <p class="bajada">Estas son las líneas en las que estoy trabajando. Todavía las estoy puliendo con compañeros de
+        distintas carreras y semestres, y quiero que lo que termine acá salga de ahí.</p>
+
+      <div class="props-grid">
+        <div class="prop-card">
+          <h3>Primera línea de trabajo</h3>
+          <p>Acá va el resumen de la propuesta en dos o tres frases: qué problema resuelve y qué cambia para el
+            estudiante.</p>
+        </div>
+        <div class="prop-card">
+          <h3>Segunda línea de trabajo</h3>
+          <p>Acá va el resumen de la propuesta en dos o tres frases: qué problema resuelve y qué cambia para el
+            estudiante.</p>
+        </div>
+        <div class="prop-card">
+          <h3>Tercera línea de trabajo</h3>
+          <p>Acá va el resumen de la propuesta en dos o tres frases: qué problema resuelve y qué cambia para el
+            estudiante.</p>
+        </div>
+      </div>
+
+      <div class="prop-aviso">
+        <h3>¿Qué le falta a tu carrera?</h3>
+        <p>Si hay algo que en tu semestre se arrastra hace años, contámelo. Las propuestas de esta campaña se
+          construyen con lo que pasa en las aulas, no en una reunión cerrada.</p>
+        <button class="boton boton-azul" data-abrir="modal-form">Mandar una propuesta</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONSEJO DIRECTIVO =====================
+       Cuando me pases el documento, reemplazo estos textos por la
+       explicación correcta según el estatuto de la UNA / FIUNA.
+       ============================================================== -->
+  <section id="consejo">
+    <div class="contenedor">
+      <h2>¿Qué es el Consejo Directivo?</h2>
+      <p class="bajada">Mucha gente vota sin saber qué se decide en este órgano. Va un resumen corto.</p>
+
+      <div class="consejo-grid">
+        <div class="consejo-card">
+          <h3>Qué hace</h3>
+          <p>Es el órgano de gobierno de la Facultad. Acá va la explicación según el estatuto: qué decide, cada cuánto
+            se reúne y quiénes lo integran.</p>
+        </div>
+        <div class="consejo-card">
+          <h3>Quiénes lo integran</h3>
+          <p>Acá va la composición: representantes docentes, estudiantiles y de egresados, con la cantidad que
+            corresponda.</p>
+        </div>
+        <div class="consejo-card">
+          <h3>Qué hace un representante estudiantil</h3>
+          <p>Lleva la voz de los estudiantes a las decisiones de la Facultad y responde por lo que vota.</p>
+        </div>
+        <div class="consejo-card">
+          <h3>Qué es ser suplente</h3>
+          <p>El suplente acompaña el trabajo del titular y asume su lugar y su voto cuando este no puede estar. Acá va
+            la definición formal según el reglamento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VOTACIÓN ===================== -->
+  <section id="votacion">
+    <div class="contenedor">
+      <h2>Cómo y dónde votar</h2>
+      <p class="bajada">Si sos estudiante de la FIUNA, tu voto entra. Anotá la fecha.</p>
+
+      <div class="voto-caja">
+        <div class="voto-fila">
+          <span class="voto-etiqueta">Cuándo</span>
+          <span class="voto-dato">Viernes 23 de octubre de 2026</span>
+        </div>
+        <div class="voto-fila">
+          <span class="voto-etiqueta">Dónde</span>
+          <span class="voto-dato">Aula Magna, FIUNA</span>
+        </div>
+        <div class="voto-fila">
+          <span class="voto-etiqueta">Qué llevar</span>
+          <!-- Confirmá el requisito exacto (cédula, carnet de estudiante) -->
+          <span class="voto-dato">Tu cédula de identidad</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ =====================
+       Editá, agregá o sacá preguntas libremente.
+       =============================================== -->
+  <section id="faq">
+    <div class="contenedor">
+      <h2>Preguntas frecuentes</h2>
+      <div class="faq-lista">
+        <details>
+          <summary>¿Quiénes pueden votar?</summary>
+          <p>Acá va el criterio según el reglamento electoral: qué estudiantes están habilitados y qué requisitos hay
+            que cumplir.</p>
+        </details>
+        <details>
+          <summary>¿Qué es Ingeniería Avanza?</summary>
+          <p>Acá va la presentación de la lista en dos o tres frases: quiénes la integran y para qué órganos se
+            presentan candidatos.</p>
+        </details>
+        <details>
+          <summary>¿Para qué cargo te postulás?</summary>
+          <p>Para Representante Estudiantil Suplente ante el Consejo Directivo de la FIUNA.</p>
+        </details>
+        <details>
+          <summary>¿Cómo me sumo a la campaña?</summary>
+          <p>Entrando al grupo de WhatsApp o completando el formulario. No hace falta experiencia previa ni dedicarle
+            todos los días: hay tareas de una hora y tareas de varias semanas.</p>
+        </details>
+        <details>
+          <summary>¿Puedo proponer algo aunque no sea de tu carrera?</summary>
+          <p>Sí. El Consejo Directivo decide sobre la Facultad entera, así que las siete carreras cuentan igual.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SUMATE ===================== -->
+  <section id="sumate">
+    <div class="contenedor">
+      <h2>Sumate a la campaña</h2>
+      <p class="bajada">Se puede ayudar de muchas formas: pasando el mensaje en tu curso, armando material, aportando
+        propuestas o acompañando el día de la votación.</p>
+      <div class="sumate-acciones">
+        <button class="boton" data-abrir="modal-form">Quiero sumarme</button>
+        <a href="https://chat.whatsapp.com/DypwSko9vZY8fsBwP9GXX3" target="_blank" rel="noopener"
+          class="boton-borde">Entrar al grupo de WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-nombre">Micaela González</p>
+    <p>Candidata a Representante Estudiantil Suplente · Consejo Directivo FIUNA · Ingeniería Avanza</p>
+    <p style="opacity:.6;margin-top:.5rem;">Elecciones del 23 de octubre de 2026</p>
+  </footer>
+
+  <a class="flotante" href="https://chat.whatsapp.com/DypwSko9vZY8fsBwP9GXX3" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+    Escribime
+  </a>
+
+  <!-- ===================== MODAL FORMULARIO ===================== -->
+  <div class="modal" id="modal-form" role="dialog" aria-modal="true" aria-labelledby="modal-form-titulo">
+    <div class="modal-caja">
+      <button class="modal-cerrar" data-cerrar aria-label="Cerrar">&#x2715;</button>
+      <h3 id="modal-form-titulo">Sumate o mandá tu propuesta</h3>
+      <p id="modal-form-texto">Dejame tus datos y te escribo. Toma menos de un minuto.</p>
+      <div id="modal-form-contenido"></div>
+    </div>
+  </div>
+
+  <script>
+    /* ============================================================
+       CONFIGURACIÓN — lo único que necesitás tocar acá
+       ============================================================ */
+
+    // Fecha y hora de la elección (año, mes-1, día, hora, minuto)
+    const FECHA_ELECCION = new Date(2026, 9, 23, 8, 0, 0); // 23 de octubre de 2026, 08:00
+
+    // Link del grupo de WhatsApp
+    const WHATSAPP = "https://chat.whatsapp.com/DypwSko9vZY8fsBwP9GXX3";
+
+    // Google Form: pegá acá el link de "Enviar > <>" (el que termina en ?embedded=true).
+    // Si lo dejás vacío, el botón manda directo al grupo de WhatsApp.
+    const FORM_URL = "";
+
+    /* ============================================================ */
+
+    // --- Menú móvil ---
+    const hamburguesa = document.getElementById('hamburguesa');
+    const menuMovil = document.getElementById('menuMovil');
+
+    function alternarMenu(forzarCerrado) {
+      const abierto = forzarCerrado ? false : !menuMovil.classList.contains('abierto');
+      menuMovil.classList.toggle('abierto', abierto);
+      hamburguesa.classList.toggle('activo', abierto);
+      hamburguesa.setAttribute('aria-expanded', String(abierto));
+      document.body.style.overflow = abierto ? 'hidden' : '';
+    }
+
+    hamburguesa.addEventListener('click', () => alternarMenu());
+    menuMovil.querySelectorAll('a').forEach(a => a.addEventListener('click', () => alternarMenu(true)));
+
+    // --- Cuenta regresiva ---
+    const cd = {
+      dias: document.getElementById('cd-dias'),
+      horas: document.getElementById('cd-horas'),
+      min: document.getElementById('cd-min'),
+      seg: document.getElementById('cd-seg')
+    };
+
+    function actualizarCuenta() {
+      const falta = FECHA_ELECCION - new Date();
+      if (falta <= 0) {
+        cd.dias.textContent = cd.horas.textContent = cd.min.textContent = cd.seg.textContent = '00';
+        document.querySelector('.cuenta-titulo').textContent = '¡Hoy se vota!';
+        return;
+      }
+      const seg = Math.floor(falta / 1000);
+      cd.dias.textContent = String(Math.floor(seg / 86400)).padStart(2, '0');
+      cd.horas.textContent = String(Math.floor(seg % 86400 / 3600)).padStart(2, '0');
+      cd.min.textContent = String(Math.floor(seg % 3600 / 60)).padStart(2, '0');
+      cd.seg.textContent = String(seg % 60).padStart(2, '0');
+    }
+
+    actualizarCuenta();
+    setInterval(actualizarCuenta, 1000);
+
+    // --- Trayectoria completa ---
+    const verMas = document.getElementById('verMas');
+    const trayectoria = document.getElementById('trayectoria');
+
+    verMas.addEventListener('click', () => {
+      const expandida = trayectoria.classList.toggle('expandida');
+      verMas.textContent = expandida ? 'Ver menos' : 'Ver trayectoria completa';
+      verMas.setAttribute('aria-expanded', String(expandida));
+    });
+
+    // --- Modal ---
+    const modal = document.getElementById('modal-form');
+    const contenido = document.getElementById('modal-form-contenido');
+
+    function abrirModal() {
+      if (FORM_URL) {
+        if (!contenido.innerHTML) {
+          contenido.innerHTML = '<iframe src="' + FORM_URL + '" title="Formulario">Cargando…</iframe>';
+        }
+      } else {
+        contenido.innerHTML =
+          '<a class="boton boton-azul" style="width:100%" href="' + WHATSAPP + '" target="_blank" rel="noopener">Escribime por WhatsApp</a>';
+        document.getElementById('modal-form-texto').textContent =
+          'Todavía estoy armando el formulario. Mientras tanto, escribime directo y lo charlamos.';
+      }
+      modal.classList.add('abierto');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function cerrarModal() {
+      modal.classList.remove('abierto');
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('[data-abrir="modal-form"]').forEach(b => b.addEventListener('click', abrirModal));
+    document.querySelectorAll('[data-cerrar]').forEach(b => b.addEventListener('click', cerrarModal));
+    modal.addEventListener('click', e => { if (e.target === modal) cerrarModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') { cerrarModal(); alternarMenu(true); } });
+  </script>
 
 </body>
+
 </html>

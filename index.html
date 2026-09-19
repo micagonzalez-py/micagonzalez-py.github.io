@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -460,10 +459,35 @@
     /* ---------- PROPUESTAS ---------- */
     #propuestas { background: var(--lila-suave); }
 
+    .prop-destacada {
+      background: var(--blanco);
+      border-radius: var(--radio);
+      padding: 1.8rem;
+      margin-top: 2rem;
+      border-left: 5px solid var(--celeste);
+    }
+
+    .prop-destacada h3 { font-size: 1.5rem; margin-bottom: 0.6rem; }
+
+    .prop-destacada p { color: var(--texto-suave); max-width: 62ch; }
+
+    .prop-destacada p + p { margin-top: 0.8rem; }
+
+    .prop-etiqueta {
+      display: inline-block;
+      background: var(--azul);
+      color: var(--celeste);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.25rem 0.8rem;
+      border-radius: 999px;
+      margin-bottom: 0.8rem;
+    }
+
     .props-grid {
       display: grid;
       gap: 1rem;
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
 
     .prop-card {
@@ -509,6 +533,45 @@
     .consejo-card h3 { color: var(--celeste); margin-bottom: 0.6rem; }
 
     .consejo-card p { color: rgba(255,255,255,.78); font-size: 0.97rem; }
+
+    /* ---------- DERECHOS ---------- */
+    #derechos { background: var(--celeste-suave); }
+
+    .derechos-grid { display: grid; gap: 1rem; margin-top: 2rem; }
+
+    .derecho-card {
+      background: var(--blanco);
+      border-radius: var(--radio);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .derecho-card h3 { font-size: 1.12rem; }
+
+    .derecho-card p { color: var(--texto-suave); font-size: 0.96rem; }
+
+    .derecho-ref {
+      margin-top: auto;
+      padding-top: 0.6rem;
+      border-top: 1px solid var(--borde);
+      font-size: 0.8rem;
+      color: var(--celeste);
+      font-weight: 600;
+    }
+
+    .derechos-cierre {
+      margin-top: 1.5rem;
+      background: var(--azul);
+      color: var(--blanco);
+      border-radius: var(--radio);
+      padding: 1.6rem;
+      font-size: 1.02rem;
+      line-height: 1.6;
+    }
+
+    .derechos-cierre span { color: var(--celeste); }
 
     /* ---------- VOTACIÓN ---------- */
     #votacion { background: var(--blanco); }
@@ -696,9 +759,11 @@
       .trayectoria { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 3rem; }
       .tray-grupo:nth-child(-n+2) { border-top: 0; }
 
-      .props-grid { grid-template-columns: repeat(3, 1fr); }
+      .props-grid { grid-template-columns: repeat(2, 1fr); }
 
       .consejo-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .derechos-grid { grid-template-columns: repeat(3, 1fr); }
 
       .voto-caja { grid-template-columns: repeat(3, 1fr); padding: 2.5rem; }
     }
@@ -727,6 +792,7 @@
       <li><a href="#sobre">Quién soy</a></li>
       <li><a href="#propuestas">Propuestas</a></li>
       <li><a href="#consejo">El Consejo</a></li>
+      <li><a href="#derechos">Tus derechos</a></li>
       <li><a href="#votacion">Cómo votar</a></li>
       <li><a href="#faq">Preguntas</a></li>
     </ul>
@@ -740,6 +806,7 @@
     <a href="#sobre">Quién soy</a>
     <a href="#propuestas">Propuestas</a>
     <a href="#consejo">El Consejo Directivo</a>
+    <a href="#derechos">Tus derechos</a>
     <a href="#votacion">Cómo votar</a>
     <a href="#faq">Preguntas frecuentes</a>
     <a href="#sumate" class="boton">Sumate a la campaña</a>
@@ -787,26 +854,28 @@
       <h2>Quién soy</h2>
       <div class="sobre-grid">
         <div class="sobre-texto">
-          <p>Soy Micaela González, estudiante de Ingeniería Civil y de Ingeniería Electrónica en la FIUNA.</p>
+          <p>Soy Micaela González, estudiante de Ingeniería Civil en la FIUNA.</p>
           <p>Desde que entré a la facultad estuve del lado de la organización: delegada de curso, auxiliar de cátedra,
-            voluntaria en cursillos y padrinazgos, y dirigente en el Centro de Estudiantes y en IEEE. Todo eso me enseñó
-            algo simple: los problemas de la facultad se resuelven cuando alguien se sienta en la mesa donde se deciden
-            las cosas y lleva lo que el resto está viviendo.</p>
-          <p>El Consejo Directivo es esa mesa. Me postulo como suplente para acompañar ese trabajo, estar cuando haga
-            falta y mantener el canal abierto entre los estudiantes y las decisiones que nos afectan.</p>
+            voluntaria en cursillos y padrinazgos, y dirigente en el Centro de Estudiantes y en IEEE. Llevo además
+            materias de Ingeniería Electrónica, así que conozco de primera mano cómo se cruzan dos mallas, dos formas
+            de evaluar y dos maneras de organizar las cátedras dentro de la misma facultad.</p>
+          <p>Todo eso me enseñó algo simple: los problemas de la facultad se resuelven cuando alguien se sienta en la
+            mesa donde se deciden las cosas y lleva lo que el resto está viviendo. El Consejo Directivo es esa mesa. Me
+            postulo como suplente para acompañar ese trabajo, estar cuando haga falta y mantener el canal abierto entre
+            los estudiantes y las decisiones que nos afectan.</p>
         </div>
         <aside class="datos-rapidos">
           <div class="dato">
-            <span class="dato-valor">2</span>
-            <span class="dato-texto">carreras en curso: Ingeniería Civil (5.º semestre) e Ingeniería Electrónica (4.º)</span>
+            <span class="dato-valor">2025</span>
+            <span class="dato-texto">represento cursos como delegada y sub-delegada desde entonces</span>
           </div>
           <div class="dato">
-            <span class="dato-valor">3</span>
-            <span class="dato-texto">años representando cursos y equipos dentro de la facultad</span>
+            <span class="dato-valor">CEI</span>
+            <span class="dato-texto">subsecretaria de Extensión, y antes de Acción Social</span>
           </div>
           <div class="dato">
-            <span class="dato-valor">+5</span>
-            <span class="dato-texto">organizaciones estudiantiles y voluntariados en los que participo</span>
+            <span class="dato-valor">Aux.</span>
+            <span class="dato-texto">auxiliar de la cátedra de Álgebra Lineal: conozco el aula de los dos lados</span>
           </div>
         </aside>
       </div>
@@ -872,24 +941,46 @@
   <section id="propuestas">
     <div class="contenedor">
       <h2>Propuestas</h2>
-      <p class="bajada">Estas son las líneas en las que estoy trabajando. Todavía las estoy puliendo con compañeros de
-        distintas carreras y semestres, y quiero que lo que termine acá salga de ahí.</p>
+      <p class="bajada">Cuatro compromisos concretos, todos dentro de lo que el Consejo Directivo puede decidir de
+        verdad. Nada de prometer cosas que se resuelven en otro lado.</p>
+
+      <div class="prop-destacada">
+        <span class="prop-etiqueta">Prioridad</span>
+        <h3>Acreditación: que deje de ser un trámite de último momento</h3>
+        <p>Ingeniería Civil no logró la acreditación ARCU-SUR. Eso no es un papel: es el reconocimiento de la carrera
+          dentro y fuera del país, y afecta a cada persona que se recibe.</p>
+        <p>El Estatuto pone entre las atribuciones del Consejo impulsar el cumplimiento de las exigencias de
+          evaluación y acreditación de las carreras. Mi compromiso es que eso se trate como lo que es: un plan de
+          mejoras con responsables, plazos y una partida en el presupuesto anual que el mismo Consejo aprueba, con
+          informe de avance en sesión cada semestre. Y que las carreras que vienen después no lleguen al mismo lugar.</p>
+      </div>
 
       <div class="props-grid">
         <div class="prop-card">
-          <h3>Primera línea de trabajo</h3>
-          <p>Acá va el resumen de la propuesta en dos o tres frases: qué problema resuelve y qué cambia para el
-            estudiante.</p>
+          <h3>Saber qué materias se abren, antes de inscribirte</h3>
+          <p>Las aperturas extraordinarias de materias de alta matriculación existen, pero se deciden tarde y nadie
+            sabe con qué criterio. Propongo un criterio publicado y una lista cerrada antes de que se abra la
+            inscripción, para que puedas armar tu semestre sabiendo con qué contás.</p>
         </div>
         <div class="prop-card">
-          <h3>Segunda línea de trabajo</h3>
-          <p>Acá va el resumen de la propuesta en dos o tres frases: qué problema resuelve y qué cambia para el
-            estudiante.</p>
+          <h3>Mirar de cerca el concurso docente</h3>
+          <p>En este período hay concurso docente, y el Consejo propone los nombramientos. Quien se escalafona ahora
+            enseña durante años. Propongo que el voto estudiantil se apoye en el expediente del concurso y en los
+            resultados de la evaluación de desempeño, y que esa evaluación llegue al Consejo antes de resolver, no
+            después.</p>
         </div>
         <div class="prop-card">
-          <h3>Tercera línea de trabajo</h3>
-          <p>Acá va el resumen de la propuesta en dos o tres frases: qué problema resuelve y qué cambia para el
-            estudiante.</p>
+          <h3>Ninguna correlatividad nueva sin transición</h3>
+          <p>Los cambios de malla y correlatividades pasan por el Consejo antes de ir al Consejo Superior. Propongo
+            que ninguno se apruebe sin un informe de cómo impacta a quienes ya están cursando, un régimen de
+            transición para ellos y una consulta previa a los delegados de curso.</p>
+        </div>
+        <div class="prop-card">
+          <h3>Ayolas no es un anexo</h3>
+          <p>La filial dicta la misma carrera, con el mismo título y la misma acreditación en juego. Propongo que cada
+            decisión del Consejo sobre calendario, apertura de materias y presupuesto diga explícitamente cómo se
+            aplica en Ayolas, y que la filial tenga un canal directo con la representación estudiantil en lugar de
+            enterarse de todo de segunda mano.</p>
         </div>
       </div>
 
@@ -903,35 +994,104 @@
   </section>
 
   <!-- ===================== CONSEJO DIRECTIVO =====================
-       Cuando me pases el documento, reemplazo estos textos por la
-       explicación correcta según el estatuto de la UNA / FIUNA.
+       Textos basados en el Estatuto de la UNA, Capítulo IV,
+       artículos 48 a 57.
        ============================================================== -->
   <section id="consejo">
     <div class="contenedor">
       <h2>¿Qué es el Consejo Directivo?</h2>
-      <p class="bajada">Mucha gente vota sin saber qué se decide en este órgano. Va un resumen corto.</p>
+      <p class="bajada">Mucha gente vota sin saber qué se decide acá. Es el órgano que gobierna la Facultad: sesiona al
+        menos dos veces al mes y de ahí salen las decisiones que tocan tu carrera todos los días.</p>
 
       <div class="consejo-grid">
         <div class="consejo-card">
-          <h3>Qué hace</h3>
-          <p>Es el órgano de gobierno de la Facultad. Acá va la explicación según el estatuto: qué decide, cada cuánto
-            se reúne y quiénes lo integran.</p>
-        </div>
-        <div class="consejo-card">
           <h3>Quiénes lo integran</h3>
-          <p>Acá va la composición: representantes docentes, estudiantiles y de egresados, con la cantidad que
-            corresponda.</p>
+          <p>El Decano, el Vicedecano, seis docentes, tres graduados y tres estudiantes. Los tres estudiantes son
+            elegidos por sus pares, y cada titular tiene su suplente, elegido en el mismo acto y de la misma forma.</p>
         </div>
         <div class="consejo-card">
-          <h3>Qué hace un representante estudiantil</h3>
-          <p>Lleva la voz de los estudiantes a las decisiones de la Facultad y responde por lo que vota.</p>
+          <h3>Qué decide</h3>
+          <p>Elige al Decano y al Vicedecano. Aprueba los programas de estudio y los reglamentos de cátedra, el
+            calendario académico, los aranceles y el presupuesto anual. Nombra profesores y auxiliares de enseñanza.</p>
+        </div>
+        <div class="consejo-card">
+          <h3>Y también</h3>
+          <p>Establece el régimen de admisión, permanencia, promoción y egreso de los estudiantes. Recibe y publica la
+            rendición de cuentas del Decano. Impulsa la evaluación y acreditación de las carreras.</p>
         </div>
         <div class="consejo-card">
           <h3>Qué es ser suplente</h3>
-          <p>El suplente acompaña el trabajo del titular y asume su lugar y su voto cuando este no puede estar. Acá va
-            la definición formal según el reglamento.</p>
+          <p>Los suplentes se eligen en el mismo acto y de la misma forma que los titulares, y ocupan el lugar cuando
+            un titular no puede estar. Sin suplentes no hay cómo sostener el cuórum: para sesionar hace falta la mitad
+            más uno de los miembros. El mandato estudiantil dura dos años.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ===================== DERECHOS =====================
+       Cada tarjeta cruza un derecho del artículo 147 del Estatuto
+       con una atribución concreta del Consejo Directivo (art. 56).
+       Por eso están solo estos: son los que el Consejo puede hacer
+       cumplir de verdad.
+       ===================================================== -->
+  <section id="derechos">
+    <div class="contenedor">
+      <h2>Los derechos que se defienden desde el Consejo</h2>
+      <p class="bajada">El Estatuto te da derechos concretos como estudiante. Estos son los que el Consejo Directivo
+        puede hacer cumplir con sus propias atribuciones, así que son los que me comprometo a mirar de cerca.</p>
+
+      <div class="derechos-grid">
+        <div class="derecho-card">
+          <h3>Que tus evaluaciones se puedan revisar</h3>
+          <p>Tenés derecho a conocer tu desempeño académico y a que las evaluaciones puedan revisarse, y a recusar por
+            escrito y con causa a los miembros de un tribunal examinador. El Consejo es el que aprueba los reglamentos
+            de cátedra y los reglamentos internos donde eso se aplica.</p>
+          <span class="derecho-ref">Estatuto UNA, art. 147 incisos d y k</span>
+        </div>
+
+        <div class="derecho-card">
+          <h3>Que te convaliden lo que ya aprobaste</h3>
+          <p>Tenés derecho a convalidar y homologar asignaturas o créditos de otras carreras e instituciones con
+            convenio vigente, y a la movilidad académica dentro de la UNA. El Consejo aprueba los proyectos académicos
+            y los reglamentos que hacen que eso funcione o se trabe.</p>
+          <span class="derecho-ref">Estatuto UNA, art. 147 incisos i y j</span>
+        </div>
+
+        <div class="derecho-card">
+          <h3>Que no pierdas la carrera por un año difícil</h3>
+          <p>La matrícula se cancela al superar el doble de la duración nominal de la carrera, salvo excepciones por
+            impedimentos justificados. Esas excepciones las resuelve el Consejo Directivo, caso por caso, y merecen un
+            criterio claro y humano.</p>
+          <span class="derecho-ref">Estatuto UNA, art. 145</span>
+        </div>
+
+        <div class="derecho-card">
+          <h3>Que promover y egresar dependa de tus méritos</h3>
+          <p>Tenés derecho a ser promovido, egresar y titularte sin discriminación de ninguna naturaleza, según tus
+            méritos académicos. El régimen de admisión, permanencia, promoción y egreso lo establece el Consejo.</p>
+          <span class="derecho-ref">Estatuto UNA, art. 147 inciso h</span>
+        </div>
+
+        <div class="derecho-card">
+          <h3>Que las cátedras tengan docentes y auxiliares</h3>
+          <p>Tenés derecho a contar con profesores calificados, con formación para la docencia universitaria y con
+            dedicación horaria adecuada al programa que cursás. El Consejo propone los nombramientos docentes y nombra
+            a los auxiliares de enseñanza.</p>
+          <span class="derecho-ref">Estatuto UNA, art. 147 inciso b</span>
+        </div>
+
+        <div class="derecho-card">
+          <h3>Que la plata de la Facultad se explique</h3>
+          <p>Tenés derecho a acceder a becas y apoyos en condiciones de igualdad. El Consejo fija los aranceles,
+            aprueba el presupuesto anual y recibe la rendición de cuentas del Decano, que debe controlar y publicar.</p>
+          <span class="derecho-ref">Estatuto UNA, art. 147 inciso e y art. 56 incisos k, q, r</span>
+        </div>
+      </div>
+
+      <p class="derechos-cierre">El propio Estatuto dice que es deber del estudiante <span>representar a sus pares en
+          los órganos de gobierno de manera objetiva, responsable y honesta</span>. Esa es la vara con la que quiero
+        que me midan.</p>
     </div>
   </section>
 
@@ -978,7 +1138,13 @@
         </details>
         <details>
           <summary>¿Para qué cargo te postulás?</summary>
-          <p>Para Representante Estudiantil Suplente ante el Consejo Directivo de la FIUNA.</p>
+          <p>Para Representante Estudiantil Suplente ante el Consejo Directivo de la FIUNA. El mandato de los
+            representantes estudiantiles dura dos años.</p>
+        </details>
+        <details>
+          <summary>¿Qué se necesita para ser representante estudiantil?</summary>
+          <p>Según el Estatuto de la UNA, el estudiante candidato debe haber aprobado las asignaturas de los cuatro
+            primeros semestres, o dos años, o un número equivalente de asignaturas de su carrera.</p>
         </details>
         <details>
           <summary>¿Cómo me sumo a la campaña?</summary>

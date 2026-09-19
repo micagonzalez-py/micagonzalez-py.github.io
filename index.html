@@ -775,6 +775,8 @@
 
       .props-grid { grid-template-columns: repeat(2, 1fr); }
 
+      .prop-ancha { grid-column: 1 / -1; }
+
       .consejo-grid { grid-template-columns: repeat(2, 1fr); }
 
       .derechos-grid:not(.oculta) { grid-template-columns: repeat(3, 1fr); }
@@ -954,7 +956,7 @@
   <section id="propuestas">
     <div class="contenedor">
       <h2>Propuestas</h2>
-      <p class="bajada">Cuatro compromisos concretos, todos dentro de lo que el Consejo Directivo puede decidir de
+      <p class="bajada">Cinco compromisos concretos, todos dentro de lo que el Consejo Directivo puede decidir de
         verdad. Nada de prometer cosas que se resuelven en otro lado.</p>
 
       <div class="prop-destacada">
@@ -995,13 +997,25 @@
             aplica en Ayolas, y que la filial tenga un canal directo con la representación estudiantil en lugar de
             enterarse de todo de segunda mano.</p>
         </div>
+        <div class="prop-card prop-ancha">
+          <h3>Un canal anónimo, abierto todo el año</h3>
+          <p>El Estatuto pone como deber del estudiante participar en la evaluación de desempeño de los profesores,
+            pero hoy no hay dónde ni cuándo hacerlo, y cuando una cátedra se desordena en pleno semestre no existe
+            forma de avisar sin exponerse. Propongo un formulario anónimo permanente sobre cátedras y gestión, cuyos
+            resultados lleguen al Consejo de forma agregada: patrones, no nombres sueltos, y a tiempo para decidir
+            nombramientos y mejoras. Lo abro desde ahora, en campaña, para mostrar que funciona.</p>
+          <!-- Cuando tengas el formulario, descomentá el botón y pegá el link:
+          <a class="boton boton-azul" href="URL_DEL_FORMULARIO" target="_blank" rel="noopener"
+            style="margin-top:1rem;">Contar algo de forma anónima</a>
+          -->
+        </div>
       </div>
 
       <div class="prop-aviso">
         <h3>¿Qué le falta a tu carrera?</h3>
         <p>Si hay algo que en tu semestre se arrastra hace años, contámelo. Las propuestas de esta campaña se
           construyen con lo que pasa en las aulas, no en una reunión cerrada.</p>
-        <a class="boton boton-azul" href="https://wa.link/koiwsc" target="_blank" rel="noopener">Mandar una propuesta</a>
+        <a class="boton boton-azul" href="https://wa.link/pgm0n4" target="_blank" rel="noopener">Mandar una propuesta</a>
       </div>
     </div>
   </section>
@@ -1055,25 +1069,15 @@
         puede hacer cumplir con sus propias atribuciones, así que son los que me comprometo a mirar de cerca.</p>
 
       <button class="ver-mas" id="verDerechos" aria-expanded="false" aria-controls="derechosGrid"
-        style="margin-top:1.5rem;">Ver los seis derechos</button>
+        style="margin-top:1.5rem;">Derechos que vamos a defender</button>
 
       <div class="derechos-grid oculta" id="derechosGrid">
         <div class="derecho-card">
-          <h3>Que tus evaluaciones se puedan revisar</h3>
-          <p>Tenés derecho a conocer tu desempeño académico y a que las evaluaciones puedan revisarse, y a recusar por
-            escrito y con causa a los miembros de un tribunal examinador. El Consejo es el que aprueba los reglamentos
-            de cátedra y los reglamentos internos donde eso se aplica.</p>
-          <span class="derecho-ref">Estatuto UNA, art. 147 incisos d y k</span>
+          <h3>Que la plata de la Facultad se explique</h3>
+          <p>Tenés derecho a acceder a becas y apoyos en condiciones de igualdad. El Consejo fija los aranceles,
+            aprueba el presupuesto anual y recibe la rendición de cuentas del Decano, que debe controlar y publicar.</p>
+          <span class="derecho-ref">Estatuto UNA, art. 147 inciso e y art. 56 incisos k, q, r</span>
         </div>
-
-        <div class="derecho-card">
-          <h3>Que te convaliden lo que ya aprobaste</h3>
-          <p>Tenés derecho a convalidar y homologar asignaturas o créditos de otras carreras e instituciones con
-            convenio vigente, y a la movilidad académica dentro de la UNA. El Consejo aprueba los proyectos académicos
-            y los reglamentos que hacen que eso funcione o se trabe.</p>
-          <span class="derecho-ref">Estatuto UNA, art. 147 incisos i y j</span>
-        </div>
-
         <div class="derecho-card">
           <h3>Que no pierdas la carrera por un año difícil</h3>
           <p>La matrícula se cancela al superar el doble de la duración nominal de la carrera, salvo excepciones por
@@ -1081,14 +1085,6 @@
             criterio claro y humano.</p>
           <span class="derecho-ref">Estatuto UNA, art. 145</span>
         </div>
-
-        <div class="derecho-card">
-          <h3>Que promover y egresar dependa de tus méritos</h3>
-          <p>Tenés derecho a ser promovido, egresar y titularte sin discriminación de ninguna naturaleza, según tus
-            méritos académicos. El régimen de admisión, permanencia, promoción y egreso lo establece el Consejo.</p>
-          <span class="derecho-ref">Estatuto UNA, art. 147 inciso h</span>
-        </div>
-
         <div class="derecho-card">
           <h3>Que las cátedras tengan docentes y auxiliares</h3>
           <p>Tenés derecho a contar con profesores calificados, con formación para la docencia universitaria y con
@@ -1096,12 +1092,25 @@
             a los auxiliares de enseñanza.</p>
           <span class="derecho-ref">Estatuto UNA, art. 147 inciso b</span>
         </div>
-
         <div class="derecho-card">
-          <h3>Que la plata de la Facultad se explique</h3>
-          <p>Tenés derecho a acceder a becas y apoyos en condiciones de igualdad. El Consejo fija los aranceles,
-            aprueba el presupuesto anual y recibe la rendición de cuentas del Decano, que debe controlar y publicar.</p>
-          <span class="derecho-ref">Estatuto UNA, art. 147 inciso e y art. 56 incisos k, q, r</span>
+          <h3>Que tus evaluaciones se puedan revisar</h3>
+          <p>Tenés derecho a conocer tu desempeño académico y a que las evaluaciones puedan revisarse, y a recusar por
+            escrito y con causa a los miembros de un tribunal examinador. El Consejo es el que aprueba los reglamentos
+            de cátedra y los reglamentos internos donde eso se aplica.</p>
+          <span class="derecho-ref">Estatuto UNA, art. 147 incisos d y k</span>
+        </div>
+        <div class="derecho-card">
+          <h3>Que te convaliden lo que ya aprobaste</h3>
+          <p>Tenés derecho a convalidar y homologar asignaturas o créditos de otras carreras e instituciones con
+            convenio vigente, y a la movilidad académica dentro de la UNA. El Consejo aprueba los proyectos académicos
+            y los reglamentos que hacen que eso funcione o se trabe.</p>
+          <span class="derecho-ref">Estatuto UNA, art. 147 incisos i y j</span>
+        </div>
+        <div class="derecho-card">
+          <h3>Que promover y egresar dependa de tus méritos</h3>
+          <p>Tenés derecho a ser promovido, egresar y titularte sin discriminación de ninguna naturaleza, según tus
+            méritos académicos. El régimen de admisión, permanencia, promoción y egreso lo establece el Consejo.</p>
+          <span class="derecho-ref">Estatuto UNA, art. 147 inciso h</span>
         </div>
       </div>
 
@@ -1289,7 +1298,7 @@
 
     verDerechos.addEventListener('click', () => {
       const abierto = derechosGrid.classList.toggle('oculta') === false;
-      verDerechos.textContent = abierto ? 'Ocultar' : 'Ver los seis derechos';
+      verDerechos.textContent = abierto ? 'Ocultar' : 'Derechos que vamos a defender';
       verDerechos.setAttribute('aria-expanded', String(abierto));
     });
 

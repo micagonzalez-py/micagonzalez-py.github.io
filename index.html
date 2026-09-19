@@ -539,6 +539,8 @@
 
     .derechos-grid { display: grid; gap: 1rem; margin-top: 2rem; }
 
+    .derechos-grid.oculta { display: none; }
+
     .derecho-card {
       background: var(--blanco);
       border-radius: var(--radio);
@@ -775,7 +777,7 @@
 
       .consejo-grid { grid-template-columns: repeat(2, 1fr); }
 
-      .derechos-grid { grid-template-columns: repeat(3, 1fr); }
+      .derechos-grid:not(.oculta) { grid-template-columns: repeat(3, 1fr); }
 
       .voto-caja { grid-template-columns: repeat(3, 1fr); padding: 2.5rem; }
     }
@@ -866,14 +868,14 @@
       <div class="sobre-grid">
         <div class="sobre-texto">
           <p>Soy Micaela González, estudiante de Ingeniería Civil en la FIUNA.</p>
-          <p>Desde que entré a la facultad estuve del lado de la organización: delegada de curso, auxiliar de cátedra,
-            voluntaria en cursillos y padrinazgos, y dirigente en el Centro de Estudiantes y en IEEE. Llevo además
-            materias de Ingeniería Electrónica, así que conozco de primera mano cómo se cruzan dos mallas, dos formas
-            de evaluar y dos maneras de organizar las cátedras dentro de la misma facultad.</p>
-          <p>Todo eso me enseñó algo simple: los problemas de la facultad se resuelven cuando alguien se sienta en la
-            mesa donde se deciden las cosas y lleva lo que el resto está viviendo. El Consejo Directivo es esa mesa. Me
-            postulo como suplente para acompañar ese trabajo, estar cuando haga falta y mantener el canal abierto entre
-            los estudiantes y las decisiones que nos afectan.</p>
+          <p>Me gusta estar donde las cosas se organizan. Fui sub-delegada y ahora delegada de mi curso, doy clases
+            como auxiliar de Álgebra Lineal, participo del Centro de Estudiantes y del IEEE, y cada tanto me anoto en
+            los cursillos y en el programa de padrinos para dar una mano a los que recién entran. Llevo también
+            materias de Ingeniería Electrónica, así que me tocó ver de cerca cómo funcionan dos mallas distintas
+            dentro de la misma facultad.</p>
+          <p>Estando en todo eso me fui dando cuenta de algo: muchas de las cosas que nos complican la vida no se
+            arreglan en el pasillo, se deciden en el Consejo Directivo. Por eso me presento como suplente. Para estar
+            cuando haga falta, escuchar lo que pasa en los cursos y llevarlo a esa mesa.</p>
         </div>
         <aside class="datos-rapidos">
           <div class="dato">
@@ -912,7 +914,7 @@
           </ul>
         </div>
 
-        <div class="tray-grupo tray-oculto">
+        <div class="tray-grupo">
           <h3>IEEE UNA</h3>
           <ul class="tray-lista">
             <li>Vicepresidenta de la RAS IEEE UNA (2026-2027)</li>
@@ -1052,7 +1054,10 @@
       <p class="bajada">El Estatuto te da derechos concretos como estudiante. Estos son los que el Consejo Directivo
         puede hacer cumplir con sus propias atribuciones, así que son los que me comprometo a mirar de cerca.</p>
 
-      <div class="derechos-grid">
+      <button class="ver-mas" id="verDerechos" aria-expanded="false" aria-controls="derechosGrid"
+        style="margin-top:1.5rem;">Ver los seis derechos</button>
+
+      <div class="derechos-grid oculta" id="derechosGrid">
         <div class="derecho-card">
           <h3>Que tus evaluaciones se puedan revisar</h3>
           <p>Tenés derecho a conocer tu desempeño académico y a que las evaluaciones puedan revisarse, y a recusar por
@@ -1189,7 +1194,7 @@
     <p class="footer-nombre">Micaela González</p>
     <p>Candidata a Representante Estudiantil Suplente · Consejo Directivo FIUNA · Ingeniería Avanza</p>
     <p style="opacity:.6;margin-top:.5rem;">Elecciones del 23 de octubre de 2026</p>
-    <p class="footer-credito">Sitio propio, sin agencia ni presupuesto de campaña.</p>
+    <p class="footer-credito">Sitio propio.</p>
   </footer>
 
   <a class="flotante" href="https://wa.link/koiwsc" target="_blank" rel="noopener">
@@ -1278,20 +1283,28 @@
       verMas.setAttribute('aria-expanded', String(expandida));
     });
 
+    // --- Derechos plegables ---
+    const verDerechos = document.getElementById('verDerechos');
+    const derechosGrid = document.getElementById('derechosGrid');
+
+    verDerechos.addEventListener('click', () => {
+      const abierto = derechosGrid.classList.toggle('oculta') === false;
+      verDerechos.textContent = abierto ? 'Ocultar' : 'Ver los seis derechos';
+      verDerechos.setAttribute('aria-expanded', String(abierto));
+    });
+
     // --- Modal ---
     const modal = document.getElementById('modal-form');
     const contenido = document.getElementById('modal-form-contenido');
 
     function abrirModal() {
-      if (FORM_URL) {
-        if (!contenido.innerHTML) {
-          contenido.innerHTML = '<iframe src="' + FORM_URL + '" title="Formulario">Cargando…</iframe>';
-        }
-      } else {
-        contenido.innerHTML =
-          '<a class="boton boton-azul" style="width:100%" href="' + WA_SUMARSE + '" target="_blank" rel="noopener">Escribime por WhatsApp</a>';
-        document.getElementById('modal-form-texto').textContent =
-          'Todavía estoy armando el formulario. Mientras tanto, escribime directo y lo charlamos.';
+      // Mientras no haya formulario, el botón lleva directo al chat de WhatsApp
+      if (!FORM_URL) {
+        window.open(WA_SUMARSE, '_blank', 'noopener');
+        return;
+      }
+      if (!contenido.innerHTML) {
+        contenido.innerHTML = '<iframe src="' + FORM_URL + '" title="Formulario">Cargando…</iframe>';
       }
       modal.classList.add('abierto');
       document.body.style.overflow = 'hidden';

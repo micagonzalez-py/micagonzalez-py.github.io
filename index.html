@@ -1,8 +1,12 @@
-<html lang="es"><head>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Micaela González – Consejo Directivo FIUNA 2026</title>
-  <meta name="description" content="Micaela González, candidata a Representante Estudiantil Suplente ante el Consejo Directivo de la FIUNA por Ingeniería Avanza. Elecciones 23 de octubre de 2026.">
+  <meta name="description"
+    content="Micaela González, candidata a Representante Estudiantil Suplente ante el Consejo Directivo de la FIUNA por Ingeniería Avanza. Elecciones 23 de octubre de 2026.">
 
   <!-- ============================================================
        REDES SOCIALES (lo que se ve cuando compartís el link)
@@ -11,21 +15,26 @@
   <meta property="og:url" content="https://micagonzalez-py.github.io/">
   <meta property="og:site_name" content="Elecciones FIUNA 2026">
   <meta property="og:title" content="Qué se vota el 23 de octubre en la FIUNA">
-  <meta property="og:description" content="Qué decide el Consejo Directivo, qué derechos tenés como estudiante y qué proponemos desde Ingeniería Avanza. Todo en una página.">
+  <meta property="og:description"
+    content="Qué decide el Consejo Directivo, qué derechos tenés como estudiante y qué proponemos desde Ingeniería Avanza. Todo en una página.">
   <meta property="og:image" content="https://micagonzalez-py.github.io/img/og-cover.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Elecciones FIUNA 2026: qué se vota y qué decide el Consejo Directivo. Micaela González, candidata a Consejera Suplente por Ingeniería Avanza.">
+  <meta property="og:image:alt"
+    content="Elecciones FIUNA 2026: qué se vota y qué decide el Consejo Directivo. Micaela González, candidata a Consejera Suplente por Ingeniería Avanza.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Qué se vota el 23 de octubre en la FIUNA">
-  <meta name="twitter:description" content="Qué decide el Consejo Directivo, qué derechos tenés como estudiante y qué proponemos desde Ingeniería Avanza.">
+  <meta name="twitter:description"
+    content="Qué decide el Consejo Directivo, qué derechos tenés como estudiante y qué proponemos desde Ingeniería Avanza.">
   <meta name="twitter:image" content="https://micagonzalez-py.github.io/img/og-cover.jpg">
 
   <link rel="icon" type="image/png" href="img/logo-ingenieria-avanza.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&amp;family=Instrument+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
   <style>
     /* ============================================================
@@ -410,7 +419,7 @@
     .criterio p { color: var(--texto-suave); font-size: 0.99rem; }
 
     .criterio-cierre {
-      margin-top: 2rem;
+      margin-top: 1rem;
       background: var(--celeste-suave);
       border-radius: var(--radio);
       padding: 1.6rem;
@@ -419,6 +428,8 @@
       line-height: 1.6;
       max-width: 62ch;
     }
+
+    .criterio-cierre:first-of-type { margin-top: 2rem; }
 
     .criterio-cierre strong { color: var(--azul); }
 
@@ -943,7 +954,8 @@
   <!-- ===================== NAV ===================== -->
   <nav aria-label="Menú principal">
     <a href="#hero" class="nav-logo">
-      <img src="img/logo-ingenieria-avanza.png" alt="Ingeniería Avanza" class="nav-logo-img" onerror="this.style.display='none'">
+      <img src="img/logo-ingenieria-avanza.png" alt="Ingeniería Avanza" class="nav-logo-img"
+        onerror="this.style.display='none'">
       <span class="nav-logo-texto">
         Micaela González
         <span class="nav-logo-sub">Ingeniería Avanza</span>
@@ -977,10 +989,10 @@
 
   <!-- ===================== HERO ===================== -->
   <header id="hero" class="hero">
-    <div class="contenedor hero-grid" style="position: relative;">
+    <div class="contenedor hero-grid">
       <div>
         <span class="hero-sello">Elecciones FIUNA · 23 de octubre</span>
-        <h1 contenteditable="true" style="outline: rgb(0, 123, 255) dashed 2px; padding: 4px;">Avancemos<span class="linea2">juntos</span></h1>
+        <h1>Avancemos<span class="linea2">juntos</span></h1>
         <p class="hero-nombre">Micaela González</p>
         <p class="hero-cargo">Candidata a Representante Estudiantil Suplente ante el Consejo Directivo por Ingeniería
           Avanza.</p>
@@ -991,10 +1003,11 @@
       </div>
       <div class="hero-foto">
         <!-- FOTO: object-position controla el encuadre; el segundo valor sube o baja el recorte -->
-        
+        <img src="img/micaela.jpg" alt="Micaela González, candidata a Representante Estudiantil Suplente"
+          onerror="this.remove()">
         <span class="foto-fallback" aria-hidden="true">MG</span>
       </div>
-    <div style="position: absolute; top: 0px; right: 0px; background: red; color: white; font-size: 10px; padding: 2px 5px; z-index: 9999;">EDITOR MODE ACTIVE</div></div>
+    </div>
   </header>
 
   <!-- ===================== CUENTA REGRESIVA ===================== -->
@@ -1002,10 +1015,10 @@
     <div class="contenedor cuenta-inner">
       <p class="cuenta-titulo">Falta para elegir a tus representantes</p>
       <div class="cuenta-numeros">
-        <div class="cuenta-bloque"><span id="cd-dias">27</span><small>días</small></div>
-        <div class="cuenta-bloque"><span id="cd-horas">19</span><small>horas</small></div>
-        <div class="cuenta-bloque"><span id="cd-min">59</span><small>min</small></div>
-        <div class="cuenta-bloque"><span id="cd-seg">18</span><small>seg</small></div>
+        <div class="cuenta-bloque"><span id="cd-dias">—</span><small>días</small></div>
+        <div class="cuenta-bloque"><span id="cd-horas">—</span><small>horas</small></div>
+        <div class="cuenta-bloque"><span id="cd-min">—</span><small>min</small></div>
+        <div class="cuenta-bloque"><span id="cd-seg">—</span><small>seg</small></div>
       </div>
     </div>
   </section>
@@ -1015,12 +1028,16 @@
     <div class="contenedor">
       <h2>Por qué esta elección<br>no es <em>una más</em></h2>
       <p class="bajada">El Consejo Directivo gobierna la Facultad durante dos años, y en este período le toca definir
-        concursos docentes, calendario, planes de estudio y presupuesto: decisiones que nos van a acompañar mucho
-        más tiempo que ese mandato.&nbsp;</p><p class="bajada">Por eso conviene leer el currículum de quien te pide el voto y preguntarte dos cosas: si esa persona tiene la trayectoria para entender lo que va a votar, y si querés que sea ella la que defienda tus derechos en esa mesa.</p>
+        concursos docentes, calendario, planes de estudio y presupuesto: decisiones que nos van a acompañar mucho más
+        tiempo que ese mandato.</p>
+      <p class="bajada">Por eso conviene leer el currículum de quien te pide el voto y preguntarte dos cosas: si esa
+        persona tiene la trayectoria para entender lo que va a votar, y si querés que sea ella la que defienda tus
+        derechos en esa mesa.</p>
 
       <p class="criterio-cierre">Aplicá esos criterios a <strong>todas las candidaturas, incluida la mía</strong>. Si
-        después de mirarlas te convence alguna, votala.&nbsp;</p><p class="criterio-cierre">Lo que no conviene es votar sin mirar: el Consejo decide igual,
-        con o sin nosotros prestando atención.</p>
+        después de mirarlas te convence alguna, votala.</p>
+      <p class="criterio-cierre">Lo que no conviene es votar sin mirar: el Consejo decide igual, con o sin nosotros
+        prestando atención.</p>
     </div>
   </section>
 
@@ -1031,10 +1048,15 @@
       <div class="sobre-grid">
         <div class="sobre-texto">
           <p>Soy Micaela González, estudiante de Ingeniería Civil en la FIUNA.</p>
-          <p dir="ltr">En estos años en la FIUNA me fui involucrando en varios ámbitos: voluntariado, docencia, investigación y liderazgo de equipos estudiantiles.</p><p dir="ltr">Estando en eso me di cuenta de algo: las decisiones que generan un cambio real en el estudiantado se toman en el Consejo Directivo.</p><p dir="ltr">Me presento como suplente para estar cuando haga falta, escuchar lo que pasa en los cursos y llevarlo a esa mesa. Y también para acercarles algo que hoy circula disperso: las oportunidades de aprendizaje, vinculación con empresas, investigación y movilidad que se pueden impulsar desde ahí.</p><p>
-
-
-</p><p dir="ltr">Cualquier problema o propuesta que te surja como estudiante, quiero que sepas que estoy dispuesta a escucharte y trabajar juntos.</p>
+          <p>En estos años en la FIUNA me fui involucrando en varios ámbitos: voluntariado, docencia, investigación
+            y liderazgo de equipos estudiantiles.</p>
+          <p>Estando en eso me di cuenta de algo: las decisiones que generan un cambio real en el estudiantado se
+            toman en el Consejo Directivo.</p>
+          <p>Me presento como suplente para estar cuando haga falta, escuchar lo que pasa en los cursos y llevarlo a
+            esa mesa. Y también para acercarles algo que hoy circula disperso: las oportunidades de aprendizaje,
+            vinculación con empresas, investigación y movilidad que se pueden impulsar desde ahí.</p>
+          <p>Cualquier problema o propuesta que te surja como estudiante, quiero que sepas que estoy dispuesta a
+            escucharte y trabajar juntos.</p>
         </div>
         <aside class="datos-rapidos">
           <div class="dato">
@@ -1043,26 +1065,34 @@
           </div>
           <div class="dato">
             <span class="dato-valor">2</span>
-            <span class="dato-texto">años representando cursos y equipos dentro de la facultad</span></div>
+            <span class="dato-texto">años representando cursos y equipos dentro de la facultad</span>
+          </div>
         </aside>
       </div>
 
-      <div class="trayectoria expandida" id="trayectoria">
+      <div class="trayectoria" id="trayectoria">
         <div class="tray-grupo">
           <h3>Equipos estudiantiles</h3>
           <ul class="tray-lista">
             <li>Delegada de 5.º semestre, Ingeniería Civil (2026/02)</li>
             <li>Sub-delegada de 2.º semestre, Ingeniería Civil (2025/01)</li>
-          </ul><div><ul class="tray-lista"><li style="color: rgb(90, 103, 121);">Vicepresidenta de la RAS IEEE UNA (2026-2027)</li><li style="color: rgb(90, 103, 121);">Comités de Proyectos, Cursos y Charlas de la RAS IEEE UNA (2025-2026)</li><ul class="tray-lista"><li style="color: rgb(90, 103, 121);">Subsecretaria de Acción Social del CEI (2025-2026)</li><li style="color: rgb(90, 103, 121);">Subsecretaria de Extensión del CEI (2026-2027)</li></ul><li style="color: rgb(90, 103, 121);">Miembro del grupo de afinidad Women in Engineering (WIE) IEEE UNA desde el 2025</li></ul></div>
+            <li>Vicepresidenta de la RAS IEEE UNA (2026-2027)</li>
+            <li>Comités de Proyectos, Cursos y Charlas de la RAS IEEE UNA (2025-2026)</li>
+            <li>Subsecretaria de Extensión del CEI (2026-2027)</li>
+            <li>Subsecretaria de Acción Social del CEI (2025-2026)</li>
+            <li>Miembro del grupo de afinidad Women in Engineering (WIE) IEEE UNA desde 2025</li>
+          </ul>
         </div>
 
         <div class="tray-grupo">
-          <h3>Academia y Guía Académica</h3>
+          <h3>Academia y guía académica</h3>
           <ul class="tray-lista">
             <li>Auxiliar de la cátedra de Álgebra Lineal (2026/01)</li>
             <li>Expositora en el X Encuentro de Investigadores de la Sociedad Científica del Paraguay (2025)</li>
             <li>Profesora voluntaria del Cursillo Intensivo Gratuito Becas Gobierno del Paraguay (2025 y 2026)</li>
-            <li>Voluntaria del programa Padrinos para ingresantes (2026)</li></ul></div>
+            <li>Voluntaria del programa Padrinos para ingresantes (2026)</li>
+          </ul>
+        </div>
 
         <div class="tray-grupo tray-oculto">
           <h3>Deporte y cultura</h3>
@@ -1077,13 +1107,13 @@
           <ul class="tray-lista">
             <li>Vicepresidenta del Centro de Estudiantes del Colegio Nacional San Roque González de Santacruz, Coronel
               Oviedo</li>
-            <li>Secretaria de Actas por Asamblea en la Federación de Estudiantes Secundarios Ovetenses (2021 - 2022)</li>
+            <li>Secretaria de Actas por Asamblea en la Federación de Estudiantes Secundarios Ovetenses (2021-2022)</li>
             <li>Ex JT de OMAPA</li>
-            <li>Mención de Honor en la Olimpiada de Mayo</li><li>Parte</li>
+            <li>Mención de Honor en la Olimpiada de Mayo</li>
           </ul>
         </div>
       </div>
-      <button class="ver-mas" id="verMas" aria-expanded="true" aria-controls="trayectoria">Ver menos</button>
+      <button class="ver-mas" id="verMas" aria-expanded="false" aria-controls="trayectoria">Ver trayectoria completa</button>
     </div>
   </section>
 
@@ -1260,8 +1290,8 @@
         <div class="prop-card">
           <h3>Un canal anónimo, abierto todo el año</h3>
           <p>El Estatuto pone como deber del estudiante participar en la evaluación de desempeño de los profesores,
-            pero hoy la encuesta aún no está estructurada de tal manera que sea más fácil evaluar verdaderamente la enseñanza, y cuando una cátedra se desordena en pleno semestre no existe
-            forma de avisar sin exponerse. Propongo un canal anónimo permanente sobre cátedras y gestión, cuyos
+            pero hoy la encuesta no está estructurada de manera que permita evaluar de verdad la enseñanza, y cuando una
+            cátedra se desordena en pleno semestre no existe forma de avisar sin exponerse. Propongo un canal anónimo permanente sobre cátedras y gestión, cuyos
             resultados lleguen al Consejo de forma agregada: patrones, no nombres sueltos.</p>
           <button class="art" type="button" aria-expanded="false">art. 146 g</button>
           <span class="art-nota">Es deber del estudiante participar de manera responsable y objetiva en el proceso de
@@ -1331,7 +1361,8 @@
       <p class="bajada">El Estatuto te da derechos concretos como estudiante. Estos son los que el Consejo Directivo
         puede hacer cumplir con sus propias atribuciones, así que son los que me comprometo a mirar de cerca.</p>
 
-      <button class="ver-mas" id="verDerechos" aria-expanded="false" aria-controls="derechosGrid" style="margin-top:1.5rem;">Derechos que vamos a defender</button>
+      <button class="ver-mas" id="verDerechos" aria-expanded="false" aria-controls="derechosGrid"
+        style="margin-top:1.5rem;">Derechos que vamos a defender</button>
 
       <div class="derechos-grid oculta" id="derechosGrid">
         <div class="derecho-card">
@@ -1412,31 +1443,33 @@
     <div class="contenedor">
       <h2>Preguntas frecuentes</h2>
       <div class="faq-lista">
-        <details open="">
+        <details>
           <summary>¿Quiénes pueden votar?</summary>
           <p>Estudiantes de la FIUNA que hayan aprobado las asignaturas del primer año de su carrera, o una cantidad
             equivalente.</p>
         </details>
-        <details open="">
+        <details>
           <summary>¿Qué es Ingeniería Avanza?</summary>
-          <p>Ingeniería Avanza en un movimiento bastante nuevo en nuestra facultad (surgio hace pocos años).</p><p>Nos mueve el compromiso real con los que están al lado nuestro, y la idea de que la facultad avanza cuando avanzan todos: lo académico, la inclusión y la participación no son tres cosas separadas.</p>
+          <p>Ingeniería Avanza es un movimiento nuevo en nuestra facultad: surgió hace pocos años.</p>
+          <p>Nos mueve el compromiso real con los que están al lado nuestro, y la idea de que la facultad avanza
+            cuando avanzan todos: lo académico, la inclusión y la participación no son tres cosas separadas.</p>
         </details>
-        <details open="">
+        <details>
           <summary>¿Para qué cargo te postulás?</summary>
           <p>Para Representante Estudiantil Suplente ante el Consejo Directivo de la FIUNA. El mandato de los
             representantes estudiantiles dura dos años.</p>
         </details>
-        <details open="">
+        <details>
           <summary>¿Qué se necesita para ser representante estudiantil?</summary>
           <p>Según el Estatuto de la UNA, el estudiante candidato debe haber aprobado las asignaturas de los cuatro
             primeros semestres, o dos años, o un número equivalente de asignaturas de su carrera.</p>
         </details>
-        <details open="">
+        <details>
           <summary>¿Cómo me sumo a la campaña?</summary>
           <p>Entrando al grupo de WhatsApp o escribiéndome por privado. Estamos abiertos a escuchar todas las ideas,
             propuestas o problemas del estudiantado.</p>
         </details>
-        <details open="">
+        <details>
           <summary>¿Puedo proponer algo aunque no sea de mi carrera?</summary>
           <p>Sí. El Consejo Directivo decide sobre la Facultad entera, así que las siete carreras cuentan igual.</p>
         </details>
@@ -1453,22 +1486,24 @@
         ver qué se está moviendo.</p>
       <div class="sumate-acciones">
         <button class="boton" data-abrir="modal-form">Quiero sumarme</button>
-        <a href="https://chat.whatsapp.com/DypwSko9vZY8fsBwP9GXX3" target="_blank" rel="noopener" class="boton-borde">Grupo de Ingeniería Avanza</a>
+        <a href="https://chat.whatsapp.com/DypwSko9vZY8fsBwP9GXX3" target="_blank" rel="noopener"
+          class="boton-borde">Grupo de Ingeniería Avanza</a>
       </div>
     </div>
   </section>
 
   <footer>
-    <img src="img/logo-ingenieria-avanza.png" alt="Ingeniería Avanza" class="footer-logo" onerror="this.style.display='none'">
+    <img src="img/logo-ingenieria-avanza.png" alt="Ingeniería Avanza" class="footer-logo"
+      onerror="this.style.display='none'">
     <p class="footer-nombre">Micaela González</p>
     <p>Candidata a Representante Estudiantil Suplente · Consejo Directivo FIUNA · Ingeniería Avanza</p>
     <p style="opacity:.6;margin-top:.5rem;">Elecciones del 23 de octubre de 2026</p>
-    <p class="footer-credito">Sitio propio. Te enseño a hacer uno similar si gustas.</p>
+    <p class="footer-credito">Sitio propio. Te enseño a hacer uno similar si gustás.</p>
   </footer>
 
   <a class="flotante" href="https://wa.link/koiwsc" target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
     </svg>
     Escribime
   </a>
@@ -1476,7 +1511,7 @@
   <!-- ===================== MODAL FORMULARIO ===================== -->
   <div class="modal" id="modal-form" role="dialog" aria-modal="true" aria-labelledby="modal-form-titulo">
     <div class="modal-caja">
-      <button class="modal-cerrar" data-cerrar="" aria-label="Cerrar">✕</button>
+      <button class="modal-cerrar" data-cerrar aria-label="Cerrar">&#x2715;</button>
       <h3 id="modal-form-titulo">Sumate o mandá tu propuesta</h3>
       <p id="modal-form-texto">Dejame tus datos y te escribo. Toma menos de un minuto.</p>
       <div id="modal-form-contenido"></div>
@@ -1599,7 +1634,6 @@
     document.addEventListener('keydown', e => { if (e.key === 'Escape') { cerrarModal(); alternarMenu(true); } });
   </script>
 
+</body>
 
-
-
-</body><chatgpt-sidebar data-rendered="true" data-gpts-theme="light"></chatgpt-sidebar></html>
+</html>

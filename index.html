@@ -323,6 +323,54 @@
       margin-top: 1.8rem;
     }
 
+    .cargos-caja {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: var(--radio);
+      padding: 1.5rem;
+    }
+
+    .cargos-titulo {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--celeste);
+      margin-bottom: 1rem;
+    }
+
+    .cargos-lista { list-style: none; display: grid; gap: 0.9rem; }
+
+    .cargos-lista li {
+      display: grid;
+      gap: 0.1rem;
+      padding-left: 0.9rem;
+      border-left: 3px solid rgba(127,208,242,.45);
+    }
+
+    .cargos-lista span { font-weight: 600; color: var(--blanco); font-size: 0.98rem; }
+
+    .cargos-lista small { color: rgba(255,255,255,.65); font-size: 0.85rem; }
+
+    .sobre-aside { display: grid; gap: 1.2rem; align-content: start; }
+
+    .sobre-foto {
+      position: relative;
+      border-radius: var(--radio);
+      overflow: hidden;
+      aspect-ratio: 4 / 5;
+      background: linear-gradient(150deg, var(--azul-medio), var(--lila));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sobre-foto img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      position: relative;
+      z-index: 1;
+    }
+
     .hero-foto {
       position: relative;
       border-radius: var(--radio);
@@ -984,7 +1032,7 @@
     <a href="#derechos">Tus derechos</a>
     <a href="#votacion">Cómo votar</a>
     <a href="#faq">Preguntas frecuentes</a>
-    <a href="#sumate" class="boton">Sumate a la campaña</a>
+    <a href="#sumate" class="boton">Sumate al equipo</a>
   </div>
 
   <!-- ===================== HERO ===================== -->
@@ -993,19 +1041,20 @@
       <div>
         <span class="hero-sello">Elecciones FIUNA · 23 de octubre</span>
         <h1>Avancemos<span class="linea2">juntos</span></h1>
-        <p class="hero-nombre">Micaela González</p>
-        <p class="hero-cargo">Candidata a Representante Estudiantil Suplente ante el Consejo Directivo por Ingeniería
-          Avanza.</p>
         <div class="hero-acciones">
-          <a href="#sumate" class="boton">Sumate a la campaña</a>
+          <a href="#sumate" class="boton">Sumate al equipo</a>
           <a href="#propuestas" class="boton-borde">Ver propuestas</a>
         </div>
       </div>
-      <div class="hero-foto">
-        <!-- FOTO: object-position controla el encuadre; el segundo valor sube o baja el recorte -->
-        <img src="img/micaela.jpg" alt="Micaela González, candidata a Representante Estudiantil Suplente"
-          onerror="this.remove()">
-        <span class="foto-fallback" aria-hidden="true">MG</span>
+
+      <div class="cargos-caja">
+        <p class="cargos-titulo">Qué se elige el 23 de octubre</p>
+        <ul class="cargos-lista">
+          <li><span>Consejo Directivo</span><small>3 titulares y 3 suplentes</small></li>
+          <li><span>Consejo Superior Universitario</span><small>1 titular y 1 suplente</small></li>
+          <li><span>Asamblea Universitaria</span><small>1 titular y 1 suplente</small></li>
+          <li><span>Tribunal Electoral Independiente</span><small>1 titular y 1 suplente</small></li>
+        </ul>
       </div>
     </div>
   </header>
@@ -1026,7 +1075,7 @@
   <!-- ===================== POR QUÉ IMPORTA ===================== -->
   <section id="importa">
     <div class="contenedor">
-      <h2>Por qué esta elección<br>no es <em>una más</em></h2>
+      <h2>Por qué esta elección<br><em>no es una más</em></h2>
       <p class="bajada">El Consejo Directivo gobierna la Facultad durante dos años, y en este período le toca definir
         concursos docentes, calendario, planes de estudio y presupuesto: decisiones que nos van a acompañar mucho más
         tiempo que ese mandato.</p>
@@ -1047,7 +1096,8 @@
       <h2>Quién soy</h2>
       <div class="sobre-grid">
         <div class="sobre-texto">
-          <p>Soy Micaela González, estudiante de Ingeniería Civil en la FIUNA.</p>
+          <p>Soy Micaela González, estudiante de Ingeniería Civil en la FIUNA, y me postulo como Representante
+            Estudiantil Suplente ante el Consejo Directivo por Ingeniería Avanza.</p>
           <p>En estos años en la FIUNA me fui involucrando en varios ámbitos: voluntariado, docencia, investigación
             y liderazgo de equipos estudiantiles.</p>
           <p>Estando en eso me di cuenta de algo: las decisiones que generan un cambio real en el estudiantado se
@@ -1058,7 +1108,14 @@
           <p>Cualquier problema o propuesta que te surja como estudiante, quiero que sepas que estoy dispuesta a
             escucharte y trabajar juntos.</p>
         </div>
-        <aside class="datos-rapidos">
+        <aside class="sobre-aside">
+          <div class="sobre-foto">
+            <img src="img/micaela.jpg" alt="Micaela González, candidata a Representante Estudiantil Suplente"
+              onerror="this.remove()">
+            <span class="foto-fallback" aria-hidden="true">MG</span>
+          </div>
+
+          <div class="datos-rapidos">
           <div class="dato">
             <span class="dato-valor">+5</span>
             <span class="dato-texto">organizaciones estudiantiles y voluntariados en los que participo</span>
@@ -1066,6 +1123,7 @@
           <div class="dato">
             <span class="dato-valor">2</span>
             <span class="dato-texto">años representando cursos y equipos dentro de la facultad</span>
+          </div>
           </div>
         </aside>
       </div>
@@ -1088,7 +1146,10 @@
           <h3>Academia y guía académica</h3>
           <ul class="tray-lista">
             <li>Auxiliar de la cátedra de Álgebra Lineal (2026/01)</li>
-            <li>Expositora en el X Encuentro de Investigadores de la Sociedad Científica del Paraguay (2025)</li>
+            <li>Miembro del Programa de Iniciación Científica del Laboratorio de Geotecnia y Materiales
+              Bituminosos (2026)</li>
+            <li>Expositora en modalidad póster en el X Encuentro de Investigadores de la Sociedad Científica del
+              Paraguay, como parte de un proyecto de investigación en la UNA (2025)</li>
             <li>Profesora voluntaria del Cursillo Intensivo Gratuito Becas Gobierno del Paraguay (2025 y 2026)</li>
             <li>Voluntaria del programa Padrinos para ingresantes (2026)</li>
           </ul>
@@ -1105,6 +1166,7 @@
         <div class="tray-grupo tray-oculto">
           <h3>Antes de la facultad</h3>
           <ul class="tray-lista">
+            <li>Participante del World Leadership Academy de la Junior Chamber International</li>
             <li>Vicepresidenta del Centro de Estudiantes del Colegio Nacional San Roque González de Santacruz, Coronel
               Oviedo</li>
             <li>Secretaria de Actas por Asamblea en la Federación de Estudiantes Secundarios Ovetenses (2021-2022)</li>
@@ -1272,35 +1334,6 @@
             </li>
           </ul>
         </details>
-      </div>
-
-      <h3 class="prop-subtitulo">A esto le voy a poner el cuerpo</h3>
-      <div class="props-grid">
-        <div class="prop-card">
-          <h3>Mirar de cerca el concurso docente</h3>
-          <p>En este período hay concurso docente, y el Consejo propone los nombramientos. Quien se escalafona ahora
-            enseña durante años. Me comprometo a que el voto estudiantil se apoye en el expediente del concurso y en
-            los resultados de la evaluación de desempeño, y a pedir que esa evaluación llegue al Consejo antes de
-            resolver, no después.</p>
-          <button class="art" type="button" aria-expanded="false">art. 56 b, f · 147 b</button>
-          <span class="art-nota">El Consejo propone al Consejo Superior el nombramiento de profesores titulares,
-            adjuntos y asistentes, y nombra a los auxiliares de enseñanza. Es derecho del estudiante contar con
-            profesores calificados y con dedicación horaria adecuada.</span>
-        </div>
-        <div class="prop-card">
-          <h3>Un canal anónimo, abierto todo el año</h3>
-          <p>El Estatuto pone como deber del estudiante participar en la evaluación de desempeño de los profesores,
-            pero hoy la encuesta no está estructurada de manera que permita evaluar de verdad la enseñanza, y cuando una
-            cátedra se desordena en pleno semestre no existe forma de avisar sin exponerse. Propongo un canal anónimo permanente sobre cátedras y gestión, cuyos
-            resultados lleguen al Consejo de forma agregada: patrones, no nombres sueltos.</p>
-          <button class="art" type="button" aria-expanded="false">art. 146 g</button>
-          <span class="art-nota">Es deber del estudiante participar de manera responsable y objetiva en el proceso de
-            evaluación de desempeño de los profesores y colaborar en la aplicación de mejoras acordadas.</span>
-          <!-- Cuando tengas el formulario, descomentá el botón y pegá el link:
-          <a class="boton boton-azul" href="URL_DEL_FORMULARIO" target="_blank" rel="noopener"
-            style="margin-top:1rem;">Contar algo de forma anónima</a>
-          -->
-        </div>
       </div>
 
       <div class="prop-aviso">
@@ -1480,7 +1513,7 @@
   <!-- ===================== SUMATE ===================== -->
   <section id="sumate">
     <div class="contenedor">
-      <h2>Sumate a la campaña</h2>
+      <h2>Sumate al equipo</h2>
       <p class="bajada">Se puede ayudar de muchas formas: pasando el mensaje en tu curso, armando material, aportando
         propuestas o acompañando el día de la votación. Escribime directo, o entrá al grupo de Ingeniería Avanza para
         ver qué se está moviendo.</p>

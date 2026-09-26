@@ -106,6 +106,10 @@
       color: var(--azul);
     }
 
+    strong { font-weight: 600; color: var(--azul); }
+
+    #consejo strong, #sumate strong, #hero strong { color: var(--celeste); }
+
     .bajada {
       margin-top: 1rem;
       max-width: 60ch;
@@ -622,41 +626,52 @@
     .prop-lista { list-style: none; display: grid; gap: 0.7rem; }
 
     .prop-lista li {
-      display: grid;
-      grid-template-columns: 8px 1fr;
-      gap: 0.8rem;
-      align-items: baseline;
+      position: relative;
+      padding-left: 1.4rem;
       font-size: 0.95rem;
       color: var(--texto-suave);
     }
 
     .prop-lista li::before {
       content: "";
+      position: absolute;
+      left: 0;
+      top: 0.62em;
       width: 7px; height: 7px;
       border-radius: 50%;
       background: var(--lila);
-      display: block;
-      transform: translateY(-2px);
     }
 
     .art {
-      display: inline-block;
-      margin-left: 0.35rem;
-      vertical-align: baseline;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      margin: 0.4rem 0.35rem 0 0;
       font-family: var(--cuerpo);
-      font-size: 0.76rem;
+      font-size: 0.8rem;
       font-weight: 600;
+      line-height: 1;
       color: var(--azul);
       background: var(--celeste-suave);
       border: 1px solid var(--celeste);
       border-radius: 999px;
-      padding: 0.1rem 0.6rem;
+      padding: 0.45rem 0.85rem;
+      min-height: 32px;
       cursor: pointer;
       white-space: nowrap;
       transition: background .15s ease;
     }
 
-    .art:hover { background: var(--celeste); }
+    .art::before { content: "?"; opacity: .7; }
+
+    .art[aria-expanded="true"] { background: var(--celeste); }
+
+    .art[aria-expanded="true"]::before { content: "×"; opacity: 1; }
+
+    @media (hover: hover) and (pointer: fine) {
+      .art:hover { background: var(--celeste); }
+      .art:hover + .art-nota { display: block; }
+    }
 
     .art-nota {
       display: none;
@@ -670,7 +685,6 @@
       color: var(--texto);
     }
 
-    .art:hover + .art-nota,
     .art[aria-expanded="true"] + .art-nota { display: block; }
 
     .prop-card .art { margin-left: 0; margin-top: 0.9rem; }
@@ -1076,12 +1090,12 @@
   <section id="importa">
     <div class="contenedor">
       <h2>Por qué esta elección<br><em>no es una más</em></h2>
-      <p class="bajada">El Consejo Directivo gobierna la Facultad durante dos años, y en este período le toca definir
-        concursos docentes, calendario, planes de estudio y presupuesto: decisiones que nos van a acompañar mucho más
-        tiempo que ese mandato.</p>
-      <p class="bajada">Por eso conviene leer el currículum de quien te pide el voto y preguntarte dos cosas: si esa
-        persona tiene la trayectoria para entender lo que va a votar, y si querés que sea ella la que defienda tus
-        derechos en esa mesa.</p>
+      <p class="bajada">El Consejo Directivo <strong>gobierna la Facultad durante dos años</strong>, y en este período le toca definir
+        concursos docentes, calendario, planes de estudio y presupuesto: <strong>decisiones que nos van a acompañar mucho más
+        tiempo que ese mandato</strong>.</p>
+      <p class="bajada">Por eso conviene <strong>leer el currículum de quien te pide el voto</strong> y preguntarte dos cosas: si esa
+        persona tiene la trayectoria para entender lo que va a votar, y <strong>si querés que sea ella la que defienda tus
+        derechos en esa mesa</strong>.</p>
 
       <p class="criterio-cierre">Aplicá esos criterios a <strong>todas las candidaturas, incluida la mía</strong>. Si
         después de mirarlas te convence alguna, votala.</p>
@@ -1096,17 +1110,17 @@
       <h2>Quién soy</h2>
       <div class="sobre-grid">
         <div class="sobre-texto">
-          <p>Soy Micaela González, estudiante de Ingeniería Civil en la FIUNA, y me postulo como Representante
-            Estudiantil Suplente ante el Consejo Directivo por Ingeniería Avanza.</p>
-          <p>En estos años en la FIUNA me fui involucrando en varios ámbitos: voluntariado, docencia, investigación
-            y liderazgo de equipos estudiantiles.</p>
-          <p>Estando en eso me di cuenta de algo: las decisiones que generan un cambio real en el estudiantado se
-            toman en el Consejo Directivo.</p>
-          <p>Me presento como suplente para estar cuando haga falta, escuchar lo que pasa en los cursos y llevarlo a
-            esa mesa. Y también para acercarles algo que hoy circula disperso: las oportunidades de aprendizaje,
-            vinculación con empresas, investigación y movilidad que se pueden impulsar desde ahí.</p>
-          <p>Cualquier problema o propuesta que te surja como estudiante, quiero que sepas que estoy dispuesta a
-            escucharte y trabajar juntos.</p>
+          <p>Soy Micaela González, estudiante de Ingeniería Civil en la FIUNA, y me postulo como <strong>Representante
+            Estudiantil Suplente ante el Consejo Directivo</strong> por Ingeniería Avanza.</p>
+          <p>En estos años en la FIUNA me fui involucrando en varios ámbitos: <strong>voluntariado, docencia, investigación
+            y liderazgo de equipos estudiantiles</strong>.</p>
+          <p>Estando en eso me di cuenta de algo: <strong>las decisiones que generan un cambio real en el estudiantado se
+            toman en el Consejo Directivo</strong>.</p>
+          <p>Me presento como suplente para estar cuando haga falta, <strong>escuchar lo que pasa en los cursos y llevarlo a
+            esa mesa</strong>. Y también para acercarles algo que hoy circula disperso: <strong>las oportunidades de aprendizaje,
+            vinculación con empresas, investigación y movilidad</strong> que se pueden impulsar desde ahí.</p>
+          <p>Cualquier problema o propuesta que te surja como estudiante, quiero que sepas que <strong>estoy dispuesta a
+            escucharte y trabajar juntos</strong>.</p>
         </div>
         <aside class="sobre-aside">
           <div class="sobre-foto">
@@ -1189,46 +1203,46 @@
   <section id="propuestas">
     <div class="contenedor">
       <h2>Propuestas</h2>
-      <p class="bajada">Estos son los ejes de trabajo de Ingeniería Avanza. Al lado de cada propuesta está el
-        artículo del Estatuto que le da al Consejo la atribución para decidirla: tocalo y se despliega.</p>
+      <p class="bajada">Estos son los ejes de trabajo de Ingeniería Avanza. Al lado de cada propuesta está <strong>el
+        artículo del Estatuto que le da al Consejo la atribución para decidirla</strong>: tocalo y se despliega.</p>
 
       <div class="props-grid">
         <details class="prop-eje">
           <summary>Académico</summary>
           <ul class="prop-lista">
-            <li>Promover la revisión íntegra de los planes curriculares de cada carrera.
+            <li>Promover la <strong>revisión íntegra de los planes curriculares</strong> de cada carrera.
               <button class="art" type="button" aria-expanded="false">art. 56 c, d</button>
               <span class="art-nota">El Consejo aprueba los proyectos académicos de la Facultad y los programas de
                 estudios, y los somete a homologación del Consejo Superior Universitario.</span>
             </li>
-            <li>Impulsar la reglamentación de sanciones ante el incumplimiento del reglamento académico.
+            <li>Impulsar la <strong>reglamentación de sanciones ante el incumplimiento del reglamento académico</strong>.
               <button class="art" type="button" aria-expanded="false">art. 56 m, t</button>
               <span class="art-nota">El Consejo aprueba los reglamentos internos de la Facultad, dicta resoluciones y
                 aplica las sanciones inherentes a sus atribuciones.</span>
             </li>
-            <li>Impulsar la creación de un protocolo para la intervención de cátedras conflictivas.
+            <li>Impulsar la creación de un <strong>protocolo para la intervención de cátedras conflictivas</strong>.
               <button class="art" type="button" aria-expanded="false">art. 56 m, p</button>
               <span class="art-nota">El Consejo aprueba los reglamentos internos y puede resolver la intervención de
                 cualquiera de las dependencias de la Facultad.</span>
             </li>
-            <li>Impulsar el pedido de separación de los parciales de materias complementarias a una semana diferente a
-              las semanas de troncales.
+            <li>Impulsar el pedido de <strong>separación de los parciales de materias complementarias a una semana diferente a
+              las semanas de troncales</strong>.
               <button class="art" type="button" aria-expanded="false">art. 56 n</button>
               <span class="art-nota">El Consejo establece el calendario académico de la Facultad.</span>
             </li>
-            <li>Promover la optimización y automatización de la socialización de información sobre los procesos de
-              Pasantía, brindando el seguimiento necesario y acompañando en el proceso.
+            <li>Promover la <strong>optimización y automatización de la socialización de información sobre los procesos de
+              Pasantía</strong>, brindando el seguimiento necesario y acompañando en el proceso.
               <button class="art" type="button" aria-expanded="false">art. 56 l, m</button>
               <span class="art-nota">El Consejo aprueba los reglamentos aplicados en la Facultad y sus reglamentos
                 internos, que es donde se define cómo funcionan estos procesos.</span>
             </li>
-            <li>Optimizar y facilitar la información sobre los procesos de intercambios y convalidación de materias,
+            <li>Optimizar y facilitar la información sobre los procesos de <strong>intercambios y convalidación de materias</strong>,
               brindando el seguimiento necesario y acompañando en el proceso.
               <button class="art" type="button" aria-expanded="false">art. 147 i, j</button>
               <span class="art-nota">Es derecho del estudiante acceder a la movilidad académica y convalidar
                 asignaturas o créditos obtenidos en otras carreras o instituciones con convenio vigente.</span>
             </li>
-            <li>Impulsar la optimización del portal web y del mecanismo de carga de calificaciones al sistema InsWeb.
+            <li>Impulsar la <strong>optimización del portal web y del mecanismo de carga de calificaciones al sistema InsWeb</strong>.
               <button class="art" type="button" aria-expanded="false">art. 56 o, q</button>
               <span class="art-nota">La ejecución es del Decanato. El Consejo establece la estructura orgánica
                 administrativa y aprueba el anteproyecto de presupuesto anual, que es la vía para exigirlo.</span>
@@ -1239,45 +1253,45 @@
         <details class="prop-eje">
           <summary>Transparencia y gestión</summary>
           <ul class="prop-lista">
-            <li>Acompañar y dar seguimiento al proceso de acreditación de las carreras de grado de la FIUNA,
+            <li>Acompañar y dar seguimiento al <strong>proceso de acreditación de las carreras de grado de la FIUNA</strong>,
               promoviendo la participación activa de la comunidad académica y estudiantil y garantizando la difusión
               clara y oportuna de los avances del proceso.
               <button class="art" type="button" aria-expanded="false">art. 56 u</button>
               <span class="art-nota">Es atribución del Consejo impulsar el cumplimiento de las exigencias previstas
                 para la evaluación y acreditación de las carreras de grado y los programas de postgrado.</span>
             </li>
-            <li>Mejorar la comunicación y socialización de las asistencias de los representantes estudiantiles a las
-              sesiones del Consejo Directivo, con un portal donde se vean en tiempo real.
+            <li>Mejorar la comunicación y socialización de las <strong>asistencias de los representantes estudiantiles a las
+              sesiones del Consejo Directivo</strong>, con un portal donde se vean en tiempo real.
               <button class="art" type="button" aria-expanded="false">art. 57</button>
               <span class="art-nota">El Consejo sesiona en forma ordinaria al menos dos veces al mes. Publicar la
                 asistencia no requiere permiso de nadie: es un compromiso de la representación estudiantil.</span>
             </li>
-            <li>Publicar un reporte trimestral al estudiantado sobre las decisiones y resoluciones del Consejo
+            <li>Publicar un <strong>reporte trimestral al estudiantado</strong> sobre las decisiones y resoluciones del Consejo
               Directivo que impacten en la vida académica.
               <button class="art" type="button" aria-expanded="false">art. 56 t</button>
               <span class="art-nota">El Consejo dicta resoluciones. Comunicarlas de forma entendible es un compromiso
                 propio de la representación estudiantil.</span>
             </li>
-            <li>Promover la permanente digitalización de actas y resoluciones del Consejo Directivo publicadas en los
+            <li>Promover la permanente <strong>digitalización de actas y resoluciones del Consejo Directivo</strong> publicadas en los
               medios oficiales de la facultad, en formato buscable.
               <button class="art" type="button" aria-expanded="false">art. 56 m, t</button>
               <span class="art-nota">El Consejo aprueba los reglamentos internos y procede a su comunicación, y dicta
                 las resoluciones de la Facultad.</span>
             </li>
-            <li>Promover la reestructuración de la encuesta docente que completan los alumnos y también la que
+            <li>Promover la <strong>reestructuración de la encuesta docente</strong> que completan los alumnos y también la que
               completan los docentes.
               <button class="art" type="button" aria-expanded="false">art. 146 g · 56 m</button>
               <span class="art-nota">Es deber del estudiante participar en el proceso de evaluación de desempeño de
                 los profesores, y el Consejo aprueba los reglamentos internos donde ese proceso se define.</span>
             </li>
-            <li>Mantener actualizadas las redes sociales de representación estudiantil, para asegurar una comunicación
+            <li>Mantener actualizadas las <strong>redes sociales de representación estudiantil</strong>, para asegurar una comunicación
               fluida y la difusión de resoluciones y avisos.
               <button class="art" type="button" aria-expanded="false">compromiso propio</button>
               <span class="art-nota">No depende de una atribución del Consejo: depende de que quien resulte electo lo
                 sostenga durante los dos años de mandato.</span>
             </li>
-            <li>Brindar acompañamiento, en todas las instancias que nos competen, a los compañeros que tengan
-              problemas por injusticias o fallos en los procesos administrativos de la facultad.
+            <li>Brindar <strong>acompañamiento, en todas las instancias que nos competen, a los compañeros que tengan
+              problemas</strong> por injusticias o fallos en los procesos administrativos de la facultad.
               <button class="art" type="button" aria-expanded="false">art. 147 h</button>
               <span class="art-nota">Es derecho del estudiante ser promovido, egresar y titularse sin discriminación
                 de naturaleza alguna, conforme a sus méritos académicos.</span>
@@ -1288,21 +1302,21 @@
         <details class="prop-eje">
           <summary>Innovación e investigación</summary>
           <ul class="prop-lista">
-            <li>Creación de un canal de investigación e innovación: todas las convocatorias abiertas a estudiantes de
+            <li>Creación de un <strong>canal de investigación e innovación</strong>: todas las convocatorias abiertas a estudiantes de
               la FIUNA —becas, fondos, semilleros, congresos y vacantes de auxiliar de investigación— publicadas en un
               solo lugar.
               <button class="art" type="button" aria-expanded="false">compromiso propio</button>
               <span class="art-nota">No hace falta una resolución para reunir y publicar lo que hoy circula
                 disperso. Se puede empezar apenas asumido el cargo.</span>
             </li>
-            <li>Fomentar la creación de nuevos proyectos académicos, talleres y espacios de investigación que
+            <li>Fomentar la creación de <strong>nuevos proyectos académicos, talleres y espacios de investigación</strong> que
               respondan a las necesidades de la Facultad e impulsen la vinculación con empresas e instituciones del
               sector de la ingeniería.
               <button class="art" type="button" aria-expanded="false">art. 56 c</button>
               <span class="art-nota">El Consejo aprueba los proyectos académicos de la Facultad y los somete a la
                 homologación del Consejo Superior Universitario.</span>
             </li>
-            <li>Gestionar acuerdos con las empresas proveedoras de los softwares de vanguardia que se usan en cada
+            <li>Gestionar <strong>acuerdos con las empresas proveedoras de los softwares</strong> de vanguardia que se usan en cada
               carrera, para la obtención de licencias.
               <button class="art" type="button" aria-expanded="false">art. 56 q</button>
               <span class="art-nota">El convenio lo firma el Decanato, pero el Consejo aprueba el anteproyecto de
@@ -1314,19 +1328,19 @@
         <details class="prop-eje">
           <summary>Infraestructura</summary>
           <ul class="prop-lista">
-            <li>Gestionar el mantenimiento preventivo y la renovación gradual del equipamiento de los distintos
-              laboratorios, para asegurar prácticas de calidad.
+            <li>Gestionar el <strong>mantenimiento preventivo y la renovación gradual del equipamiento de los distintos
+              laboratorios</strong>, para asegurar prácticas de calidad.
               <button class="art" type="button" aria-expanded="false">art. 56 q · 147 a</button>
               <span class="art-nota">El Consejo aprueba el anteproyecto de presupuesto anual, y es derecho del
                 estudiante recibir una sólida formación profesional integral.</span>
             </li>
-            <li>Gestionar la disponibilidad de los suministros y el horario de atención de la enfermería, necesarios
+            <li>Gestionar la disponibilidad de los <strong>suministros y el horario de atención de la enfermería</strong>, necesarios
               para brindar una atención adecuada y oportuna a estudiantes y funcionarios.
               <button class="art" type="button" aria-expanded="false">art. 56 q</button>
               <span class="art-nota">La ejecución es del Decanato. El Consejo lo alcanza a través del presupuesto
                 anual que aprueba cada año.</span>
             </li>
-            <li>Propulsar el mantenimiento y la unificación del sistema de seguridad relacionado a las cámaras
+            <li>Propulsar el <strong>mantenimiento y la unificación del sistema de seguridad</strong> relacionado a las cámaras
               disponibles en los distintos sectores de la facultad.
               <button class="art" type="button" aria-expanded="false">art. 56 q</button>
               <span class="art-nota">Misma vía: es una decisión de ejecución del Decanato que depende de que el
@@ -1352,18 +1366,18 @@
   <section id="consejo">
     <div class="contenedor">
       <h2>¿Qué es el Consejo Directivo?</h2>
-      <p class="bajada">Mucha gente vota sin saber qué se decide acá. Es el órgano que gobierna la Facultad: sesiona al
-        menos dos veces al mes y de ahí salen las decisiones que tocan tu carrera todos los días.</p>
+      <p class="bajada">Mucha gente vota sin saber qué se decide acá. Es el órgano que gobierna la Facultad: <strong>sesiona al
+        menos dos veces al mes</strong> y de ahí salen las decisiones que tocan tu carrera todos los días.</p>
 
       <div class="consejo-grid">
         <div class="consejo-card">
           <h3>Quiénes lo integran</h3>
-          <p>El Decano, el Vicedecano, seis docentes, tres graduados y tres estudiantes. Los tres estudiantes son
+          <p><strong>El Decano, el Vicedecano, seis docentes, tres graduados y tres estudiantes</strong>. Los tres estudiantes son
             elegidos por sus pares, y cada titular tiene su suplente, elegido en el mismo acto y de la misma forma.</p>
         </div>
         <div class="consejo-card">
           <h3>Qué decide</h3>
-          <p>Elige al Decano y al Vicedecano. Aprueba los programas de estudio y los reglamentos de cátedra, el
+          <p><strong>Elige al Decano y al Vicedecano</strong>. Aprueba los programas de estudio y los reglamentos de cátedra, el
             calendario académico, los aranceles y el presupuesto anual. Nombra profesores y auxiliares de enseñanza.</p>
         </div>
         <div class="consejo-card">
@@ -1376,8 +1390,8 @@
         </div>
         <div class="consejo-card">
           <h3>Qué es ser suplente</h3>
-          <p>Los suplentes se eligen en el mismo acto y de la misma forma que los titulares, y ocupan el lugar cuando
-            un titular no puede estar. Sin suplentes no hay cómo sostener el cuórum: para sesionar hace falta la mitad
+          <p>Los suplentes se eligen en el mismo acto y de la misma forma que los titulares, y <strong>ocupan el lugar cuando
+            un titular no puede estar</strong>. Sin suplentes no hay cómo sostener el cuórum: para sesionar hace falta la mitad
             más uno de los miembros. El mandato estudiantil dura dos años.</p>
         </div>
       </div>
@@ -1391,8 +1405,8 @@
   <section id="derechos">
     <div class="contenedor">
       <h2>Los derechos que se defienden desde el Consejo</h2>
-      <p class="bajada">El Estatuto te da derechos concretos como estudiante. Estos son los que el Consejo Directivo
-        puede hacer cumplir con sus propias atribuciones, así que son los que me comprometo a mirar de cerca.</p>
+      <p class="bajada">El Estatuto te da derechos concretos como estudiante. <strong>Estos son los que el Consejo Directivo
+        puede hacer cumplir con sus propias atribuciones</strong>, así que son los que me comprometo a mirar de cerca.</p>
 
       <button class="ver-mas" id="verDerechos" aria-expanded="false" aria-controls="derechosGrid"
         style="margin-top:1.5rem;">Derechos que vamos a defender</button>
@@ -1450,8 +1464,8 @@
   <section id="votacion">
     <div class="contenedor">
       <h2>Cómo y dónde votar</h2>
-      <p class="bajada">Podés votar si sos estudiante de la FIUNA y aprobaste las asignaturas del primer año de tu
-        carrera, o una cantidad equivalente. Anotá la fecha.</p>
+      <p class="bajada">Podés votar si sos estudiante de la FIUNA y <strong>aprobaste las asignaturas del primer año de tu
+        carrera</strong>, o una cantidad equivalente. Anotá la fecha.</p>
 
       <div class="voto-caja">
         <div class="voto-fila">

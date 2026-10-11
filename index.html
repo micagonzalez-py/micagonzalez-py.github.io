@@ -1,8 +1,12 @@
-<html lang="es"><head>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Micaela González – Consejo Directivo FIUNA 2026</title>
-  <meta name="description" content="Micaela González, candidata a Representante Estudiantil Suplente ante el Consejo Directivo de la FIUNA por Ingeniería Avanza. Elecciones 23 de octubre de 2026.">
+  <meta name="description"
+    content="Micaela González, candidata a Representante Estudiantil Suplente ante el Consejo Directivo de la FIUNA por Ingeniería Avanza. Elecciones 23 de octubre de 2026.">
 
   <!-- ============================================================
        REDES SOCIALES (lo que se ve cuando compartís el link)
@@ -11,21 +15,26 @@
   <meta property="og:url" content="https://micagonzalez-py.github.io/">
   <meta property="og:site_name" content="Elecciones FIUNA 2026">
   <meta property="og:title" content="Qué se vota el 23 de octubre en la FIUNA">
-  <meta property="og:description" content="Qué decide el Consejo Directivo, qué derechos tenés como estudiante y qué proponemos desde Ingeniería Avanza. Todo en una página.">
+  <meta property="og:description"
+    content="Qué se elige, qué hace un representante estudiantil y qué decide el Consejo Directivo de la FIUNA. Todo en una página.">
   <meta property="og:image" content="https://micagonzalez-py.github.io/img/og-cover.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Elecciones FIUNA 2026: qué se vota y qué decide el Consejo Directivo. Micaela González, candidata a Consejera Suplente por Ingeniería Avanza.">
+  <meta property="og:image:alt"
+    content="Elecciones FIUNA 2026: qué se vota y qué decide el Consejo Directivo. Micaela González, candidata a Consejera Suplente por Ingeniería Avanza.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Qué se vota el 23 de octubre en la FIUNA">
-  <meta name="twitter:description" content="Qué decide el Consejo Directivo, qué derechos tenés como estudiante y qué proponemos desde Ingeniería Avanza.">
+  <meta name="twitter:description"
+    content="Qué se elige, qué hace un representante estudiantil y qué decide el Consejo Directivo de la FIUNA.">
   <meta name="twitter:image" content="https://micagonzalez-py.github.io/img/og-cover.jpg">
 
   <link rel="icon" type="image/png" href="img/logo-ingenieria-avanza.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&amp;family=Instrument+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
   <style>
     /* ============================================================
@@ -99,7 +108,7 @@
 
     strong { font-weight: 600; color: var(--azul); }
 
-    #consejo strong, #sumate strong, #hero strong { color: var(--celeste); }
+    #mas strong, #sumate strong, #hero strong { color: var(--celeste); }
 
     .bajada {
       margin-top: 1rem;
@@ -299,19 +308,6 @@
 
     .hero h1 .linea2 { color: var(--celeste); display: block; }
 
-    .hero-nombre {
-      font-size: 1.15rem;
-      font-weight: 600;
-      color: var(--blanco);
-      margin-top: 1.2rem;
-    }
-
-    .hero-cargo {
-      color: rgba(255,255,255,.72);
-      font-size: 1rem;
-      max-width: 34ch;
-    }
-
     .hero-acciones {
       display: flex;
       flex-wrap: wrap;
@@ -346,54 +342,6 @@
     .cargos-lista span { font-weight: 600; color: var(--blanco); font-size: 0.98rem; }
 
     .cargos-lista small { color: rgba(255,255,255,.65); font-size: 0.85rem; }
-
-    .sobre-aside { display: grid; gap: 1.2rem; align-content: start; }
-
-    .sobre-foto {
-      position: relative;
-      border-radius: var(--radio);
-      overflow: hidden;
-      aspect-ratio: 4 / 5;
-      background: linear-gradient(150deg, var(--azul-medio), var(--lila));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .sobre-foto img {
-      width: 100%; height: 100%;
-      object-fit: cover;
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero-foto {
-      position: relative;
-      border-radius: var(--radio);
-      overflow: hidden;
-      aspect-ratio: 4 / 5;
-      background: linear-gradient(150deg, var(--azul-medio), var(--lila));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    /* La foto va encima del monograma, no al lado */
-    .hero-foto img {
-      width: 100%; height: 100%;
-      object-fit: cover;
-      position: relative;
-      z-index: 1;
-    }
-
-    .foto-fallback {
-      position: absolute;
-      font-family: var(--display);
-      font-weight: 800;
-      font-size: 4rem;
-      color: rgba(255,255,255,.35);
-      letter-spacing: 0.05em;
-    }
 
     /* ---------- CUENTA REGRESIVA ---------- */
     #cuenta {
@@ -443,25 +391,6 @@
 
     #importa h2 em { font-style: normal; color: var(--lila); }
 
-    .criterios { display: grid; gap: 1.2rem; margin-top: 2.5rem; }
-
-    .criterio {
-      display: grid;
-      gap: 0.6rem;
-      padding-top: 1.4rem;
-      border-top: 3px solid var(--celeste);
-    }
-
-    .criterio-num {
-      font-family: var(--display);
-      font-weight: 800;
-      font-size: 1.1rem;
-      color: var(--celeste);
-      letter-spacing: 0.08em;
-    }
-
-    .criterio p { color: var(--texto-suave); font-size: 0.99rem; }
-
     .criterio-cierre {
       margin-top: 1rem;
       background: var(--celeste-suave);
@@ -477,303 +406,65 @@
 
     .criterio-cierre strong { color: var(--azul); }
 
-    /* ---------- SOBRE MÍ ---------- */
-    #sobre { background: var(--blanco); }
+    /* ---------- REPRESENTANTES ---------- */
+    #representantes { background: var(--blanco); }
 
-    .sobre-grid { display: grid; gap: 2.5rem; margin-top: 2rem; }
+    #representantes h2 em { font-style: normal; color: var(--lila); }
 
-    .sobre-texto p { margin-bottom: 1rem; color: var(--texto-suave); }
+    .rep-grid { display: grid; gap: 1rem; margin-top: 2.2rem; }
 
-    .sobre-texto p:first-child {
-      color: var(--texto);
-      font-size: 1.15rem;
-      font-weight: 500;
-    }
-
-    .datos-rapidos {
-      display: grid;
-      gap: 0.75rem;
+    .rep-card {
       background: var(--celeste-suave);
       border-radius: var(--radio);
       padding: 1.5rem;
-      align-content: start;
     }
 
-    .dato { display: flex; gap: 0.8rem; align-items: baseline; }
+    .rep-card h3 { margin-bottom: 0.5rem; font-size: 1.12rem; }
 
-    .dato-valor {
-      font-family: var(--display);
-      font-weight: 800;
-      font-size: 1.5rem;
-      color: var(--azul);
-      min-width: 2.8rem;
-    }
+    .rep-card p { color: var(--texto-suave); font-size: 0.96rem; }
 
-    .dato-texto { font-size: 0.93rem; color: var(--texto-suave); line-height: 1.4; }
+    /* ---------- MÁS INFO ---------- */
+    #mas { background: var(--azul); color: var(--blanco); }
 
-    /* trayectoria */
-    .trayectoria { margin-top: 2.5rem; }
+    #mas h2 { color: var(--blanco); }
 
-    .tray-grupo { border-top: 1px solid var(--borde); padding: 1.4rem 0; }
+    #mas .bajada { color: rgba(255,255,255,.75); }
 
-    .tray-grupo h3 { margin-bottom: 0.8rem; font-size: 1.05rem; }
+    .link-grid { display: grid; gap: 1rem; margin-top: 2.2rem; }
 
-    .tray-lista { list-style: none; display: grid; gap: 0.55rem; }
-
-    .tray-lista li {
+    .link-card {
       display: grid;
-      grid-template-columns: 8px 1fr;
-      gap: 0.8rem;
-      align-items: baseline;
-      font-size: 0.95rem;
-      color: var(--texto-suave);
-    }
-
-    .tray-lista li::before {
-      content: "";
-      width: 7px; height: 7px;
-      border-radius: 50%;
-      background: var(--lila);
-      display: block;
-      transform: translateY(-2px);
-    }
-
-    .tray-oculto { display: none; }
-    .trayectoria.expandida .tray-oculto { display: block; }
-
-    .ver-mas {
-      margin-top: 1.2rem;
-      background: none;
-      border: 2px solid var(--borde);
-      color: var(--azul);
-      font-family: var(--cuerpo);
-      font-weight: 600;
-      font-size: 0.95rem;
-      padding: 0.7rem 1.4rem;
-      border-radius: 999px;
-      cursor: pointer;
-    }
-
-    .ver-mas:hover { border-color: var(--lila); color: var(--lila); }
-
-    /* ---------- PROPUESTAS ---------- */
-    #propuestas { background: var(--lila-suave); }
-
-    .prop-destacada {
-      background: var(--blanco);
-      border-radius: var(--radio);
-      padding: 1.8rem;
-      margin-top: 2rem;
-      border-left: 5px solid var(--celeste);
-    }
-
-    .prop-destacada h3 { font-size: 1.5rem; margin-bottom: 0.6rem; }
-
-    .prop-destacada p { color: var(--texto-suave); max-width: 62ch; }
-
-    .prop-destacada p + p { margin-top: 0.8rem; }
-
-    .prop-etiqueta {
-      display: inline-block;
-      background: var(--azul);
-      color: var(--celeste);
-      font-size: 0.78rem;
-      font-weight: 600;
-      padding: 0.25rem 0.8rem;
-      border-radius: 999px;
-      margin-bottom: 0.8rem;
-    }
-
-    .props-grid {
-      display: grid;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .prop-eje {
-      background: var(--blanco);
-      border-radius: var(--radio);
-      padding: 1.1rem 1.4rem;
-      border: 0;
-      border-top: 4px solid var(--celeste);
-      align-self: start;
-    }
-
-    .prop-eje summary {
-      font-family: var(--display);
-      font-weight: 600;
-      font-size: 1.15rem;
-      color: var(--azul);
-    }
-
-    .prop-eje[open] summary { margin-bottom: 0.9rem; }
-
-    .prop-nota {
-      font-size: 0.88rem;
-      color: var(--lila);
-      font-weight: 600;
-      margin-bottom: 0.9rem;
-    }
-
-    .prop-lista { list-style: none; display: grid; gap: 0.7rem; }
-
-    .prop-lista li {
-      position: relative;
-      padding-left: 1.4rem;
-      font-size: 0.95rem;
-      color: var(--texto-suave);
-    }
-
-    .prop-lista li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0.62em;
-      width: 7px; height: 7px;
-      border-radius: 50%;
-      background: var(--lila);
-    }
-
-    .art {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      margin: 0.4rem 0.35rem 0 0;
-      font-family: var(--cuerpo);
-      font-size: 0.8rem;
-      font-weight: 600;
-      line-height: 1;
-      color: var(--azul);
-      background: var(--celeste-suave);
-      border: 1px solid var(--celeste);
-      border-radius: 999px;
-      padding: 0.45rem 0.85rem;
-      min-height: 32px;
-      cursor: pointer;
-      white-space: nowrap;
-      transition: background .15s ease;
-    }
-
-    .art::before { content: "?"; opacity: .7; }
-
-    .art[aria-expanded="true"] { background: var(--celeste); }
-
-    .art[aria-expanded="true"]::before { content: "×"; opacity: 1; }
-
-    @media (hover: hover) and (pointer: fine) {
-      .art:hover { background: var(--celeste); }
-    }
-
-    .art-nota {
-      display: none;
-      margin-top: 0.5rem;
-      background: var(--celeste-suave);
-      border-left: 3px solid var(--celeste);
-      border-radius: 0 8px 8px 0;
-      padding: 0.6rem 0.8rem;
-      font-size: 0.86rem;
-      line-height: 1.5;
-      color: var(--texto);
-    }
-
-    .art[aria-expanded="true"] + .art-nota { display: block; }
-
-    .prop-card .art { margin-left: 0; margin-top: 0.9rem; }
-
-    .prop-subtitulo {
-      margin-top: 2.5rem;
-      font-size: 1.35rem;
-      color: var(--azul);
-    }
-
-    .prop-card {
-      background: var(--blanco);
-      border-radius: var(--radio);
-      padding: 1.6rem;
-      border-left: 5px solid var(--lila);
-    }
-
-    .prop-card h3 { margin-bottom: 0.5rem; }
-
-    .prop-card p { color: var(--texto-suave); font-size: 0.97rem; }
-
-    .prop-aviso {
-      margin-top: 1.5rem;
-      background: var(--blanco);
-      border: 2px dashed var(--lila);
-      border-radius: var(--radio);
-      padding: 1.5rem;
-      display: grid;
-      gap: 1rem;
-      justify-items: start;
-    }
-
-    .prop-aviso p { color: var(--texto-suave); max-width: 55ch; }
-
-    /* ---------- CONSEJO ---------- */
-    #consejo { background: var(--azul); color: var(--blanco); }
-
-    #consejo h2 { color: var(--blanco); }
-
-    #consejo .bajada { color: rgba(255,255,255,.75); }
-
-    .consejo-grid { display: grid; gap: 1rem; margin-top: 2rem; }
-
-    .consejo-card {
+      gap: 0.35rem;
       background: rgba(255,255,255,.07);
-      border: 1px solid rgba(255,255,255,.14);
+      border: 1px solid rgba(255,255,255,.16);
       border-radius: var(--radio);
-      padding: 1.6rem;
+      padding: 1.4rem;
+      text-decoration: none;
+      transition: background .15s ease, border-color .15s ease;
     }
 
-    .consejo-card h3 { color: var(--celeste); margin-bottom: 0.6rem; }
-
-    .consejo-card p { color: rgba(255,255,255,.78); font-size: 0.97rem; }
-
-    .consejo-lista { list-style: none; display: grid; gap: 0.5rem; margin-top: 0.2rem; }
-
-    .consejo-lista li { color: rgba(255,255,255,.78); font-size: 0.97rem; line-height: 1.45; }
-
-    /* ---------- DERECHOS ---------- */
-    #derechos { background: var(--celeste-suave); }
-
-    .derechos-grid { display: grid; gap: 1rem; margin-top: 2rem; }
-
-    .derechos-grid.oculta { display: none; }
-
-    .derecho-card {
-      background: var(--blanco);
-      border-radius: var(--radio);
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
+    .link-card:hover {
+      background: rgba(255,255,255,.12);
+      border-color: var(--celeste);
     }
 
-    .derecho-card h3 { font-size: 1.12rem; }
-
-    .derecho-card p { color: var(--texto-suave); font-size: 0.96rem; }
-
-    .derecho-ref {
-      margin-top: auto;
-      padding-top: 0.6rem;
-      border-top: 1px solid var(--borde);
-      font-size: 0.8rem;
-      color: var(--celeste);
+    .link-tipo {
+      font-size: 0.75rem;
       font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--celeste);
     }
 
-    .derechos-cierre {
-      margin-top: 1.5rem;
-      background: var(--azul);
+    .link-titulo {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 1.12rem;
       color: var(--blanco);
-      border-radius: var(--radio);
-      padding: 1.6rem;
-      font-size: 1.02rem;
-      line-height: 1.6;
+      line-height: 1.25;
     }
 
-    .derechos-cierre span { color: var(--celeste); }
+    .link-ir { font-size: 0.88rem; color: rgba(255,255,255,.6); margin-top: 0.3rem; }
 
     /* ---------- VOTACIÓN ---------- */
     #votacion { background: var(--blanco); }
@@ -840,6 +531,30 @@
       font-size: 0.97rem;
       max-width: 68ch;
     }
+
+    /* ---------- EQUIPO ---------- */
+    #equipo { background: var(--blanco); padding-bottom: 0; }
+
+    .equipo-caja {
+      background: var(--lila-suave);
+      border-radius: var(--radio);
+      padding: 2.2rem;
+      display: grid;
+      gap: 1rem;
+      justify-items: start;
+    }
+
+    .equipo-caja h2 { font-size: clamp(1.5rem, 4.5vw, 2.1rem); }
+
+    .equipo-caja h2 em { font-style: normal; color: var(--lila); }
+
+    .equipo-caja p { color: var(--texto-suave); max-width: 58ch; }
+
+    .equipo-caja .boton { background: var(--azul); color: var(--blanco); }
+
+    .equipo-caja .boton:hover { background: var(--azul-medio); }
+
+    .equipo-caja svg { width: 18px; height: 18px; fill: currentColor; }
 
     /* ---------- SUMATE ---------- */
     #sumate { background: var(--azul); color: var(--blanco); text-align: center; }
@@ -962,8 +677,6 @@
       .nav-links a { font-size: 0.88rem; }
       .hamburguesa { display: none; }
 
-      .criterios { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-
       #hero { padding: 9rem 0 5rem; }
 
       .hero-grid {
@@ -972,25 +685,14 @@
         gap: 3.5rem;
       }
 
-      .hero-foto { order: 2; }
-
       .cuenta-inner { grid-template-columns: auto 1fr; gap: 2.5rem; }
       .cuenta-titulo { font-size: 1.25rem; max-width: 18ch; }
       .cuenta-numeros { justify-content: flex-end; }
       .cuenta-bloque { min-width: 92px; flex: 0 0 auto; }
 
-      .sobre-grid { grid-template-columns: 1.4fr 0.9fr; }
+      .rep-grid { grid-template-columns: repeat(2, 1fr); }
 
-      .trayectoria { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 3rem; }
-      .tray-grupo:nth-child(-n+2) { border-top: 0; }
-
-      .props-grid { grid-template-columns: repeat(2, 1fr); }
-
-      .prop-ancha { grid-column: 1 / -1; }
-
-      .consejo-grid { grid-template-columns: repeat(2, 1fr); }
-
-      .derechos-grid:not(.oculta) { grid-template-columns: repeat(3, 1fr); }
+      .link-grid { grid-template-columns: repeat(2, 1fr); }
 
       .voto-caja { grid-template-columns: repeat(3, 1fr); padding: 2.5rem; }
     }
@@ -1007,7 +709,7 @@
   <!-- ===================== NAV ===================== -->
   <nav aria-label="Menú principal">
     <a href="#hero" class="nav-logo">
-      <img src="img/logo-ingenieria-avanza.png" alt="Ingeniería Avanza" class="nav-logo-img" onerror="this.style.display='none'">
+      <img src="img/logo-ingenieria-avanza.png" alt="Ingeniería Avanza" class="nav-logo-img">
       <span class="nav-logo-texto">
         Micaela González
         <span class="nav-logo-sub">Ingeniería Avanza</span>
@@ -1015,10 +717,8 @@
     </a>
     <ul class="nav-links">
       <li><a href="#importa">Por qué importa</a></li>
-      <li><a href="#sobre">Quién soy</a></li>
-      <li><a href="#propuestas">Propuestas</a></li>
-      <li><a href="#consejo">El Consejo</a></li>
-      <li><a href="#derechos">Tus derechos</a></li>
+      <li><a href="#representantes">Representantes</a></li>
+      <li><a href="#mas">Para saber más</a></li>
       <li><a href="#votacion">Cómo votar</a></li>
       <li><a href="#faq">Preguntas</a></li>
     </ul>
@@ -1030,10 +730,8 @@
 
   <div class="menu-movil" id="menuMovil" aria-hidden="true">
     <a href="#importa">Por qué importa</a>
-    <a href="#sobre">Quién soy</a>
-    <a href="#propuestas">Propuestas</a>
-    <a href="#consejo">El Consejo Directivo</a>
-    <a href="#derechos">Tus derechos</a>
+    <a href="#representantes">Los representantes</a>
+    <a href="#mas">Para saber más</a>
     <a href="#votacion">Cómo votar</a>
     <a href="#faq">Preguntas frecuentes</a>
     <a href="#sumate" class="boton">Sumate al equipo</a>
@@ -1046,13 +744,13 @@
         <span class="hero-sello">Elecciones FIUNA · 23 de octubre</span>
         <h1>Avancemos<span class="linea2">juntos</span></h1>
         <div class="hero-acciones">
-          <a href="#sumate" class="boton">Sumate al equipo</a>
-          <a href="#propuestas" class="boton-borde">Ver propuestas</a>
+          <a href="#importa" class="boton">Por qué es importante</a>
+          <a href="#votacion" class="boton-borde">Cómo votar</a>
         </div>
       </div>
 
       <div class="cargos-caja">
-        <p class="cargos-titulo">Qué se elige el 23 de octubre</p>
+        <p class="cargos-titulo">¿Qué se elige el 23 de octubre?</p>
         <ul class="cargos-lista">
           <li><span>Consejo Directivo</span><small>3 titulares y 3 suplentes</small></li>
           <li><span>Consejo Superior Universitario</span><small>1 titular y 1 suplente</small></li>
@@ -1068,10 +766,10 @@
     <div class="contenedor cuenta-inner">
       <p class="cuenta-titulo">Falta para elegir a tus representantes</p>
       <div class="cuenta-numeros">
-        <div class="cuenta-bloque"><span id="cd-dias">26</span><small>días</small></div>
-        <div class="cuenta-bloque"><span id="cd-horas">15</span><small>horas</small></div>
-        <div class="cuenta-bloque"><span id="cd-min">33</span><small>min</small></div>
-        <div class="cuenta-bloque"><span id="cd-seg">25</span><small>seg</small></div>
+        <div class="cuenta-bloque"><span id="cd-dias">—</span><small>días</small></div>
+        <div class="cuenta-bloque"><span id="cd-horas">—</span><small>horas</small></div>
+        <div class="cuenta-bloque"><span id="cd-min">—</span><small>min</small></div>
+        <div class="cuenta-bloque"><span id="cd-seg">—</span><small>seg</small></div>
       </div>
     </div>
   </section>
@@ -1080,375 +778,95 @@
   <section id="importa">
     <div class="contenedor">
       <h2>Por qué esta elección<br><em>no es una más</em></h2>
-      <p class="bajada">El Consejo Directivo <strong>gobierna</strong>&nbsp;la Facultad durante<strong style="font-size: 1.05rem;">&nbsp;dos años</strong><span style="font-size: 1.05rem;">, y en este período le toca definir
-        concursos docentes, escalafonamientos, calendario, planes de estudio y presupuesto: </span><strong style="font-size: 1.05rem;">decisiones&nbsp;</strong>que nos van a acompañar&nbsp;<strong style="font-size: 1.05rem;">mucho más
-        tiempo que ese mandato</strong><span style="font-size: 1.05rem;">.</span></p>
-      <p class="bajada">Por eso conviene <strong>leer el currículum</strong>&nbsp;de quien te pide el voto y preguntarte dos cosas: si esa
-        persona tiene la trayectoria para entender lo que va a votar estando en el Consejo Directivo, y si querés que ella sea la que&nbsp;<strong>defienda tus
-        derechos en esa mesa</strong>.</p>
+      <p class="bajada">El 23 de octubre se eligen a los <strong>estudiantes que van a ocupar las bancas que el
+        Estatuto de la UNA reserva para el estamento estudiantil</strong> en los órganos que gobiernan la Facultad y
+        la Universidad.</p>
+      <p class="bajada">Un representante estudiantil se sienta en la misma mesa que los docentes, los graduados y las
+        autoridades, y <strong>vota</strong>. En el Consejo Directivo, por ejemplo, los tres estudiantes votan junto
+        al Decano, el Vicedecano, seis docentes y tres graduados sobre programas de estudio, calendario académico,
+        presupuesto, aranceles y nombramientos docentes.</p>
+      <p class="bajada">El mandato estudiantil <strong>dura dos años</strong>, pero varias de esas decisiones duran
+        mucho más: un concurso docente define quién enseña durante años, y un cambio de plan de estudios acompaña a
+        varias generaciones.</p>
+      <p class="bajada">Por eso conviene <strong>leer el currículum de quien te pide el voto</strong> y preguntarte
+        dos cosas: si esa persona tiene la trayectoria para entender lo que va a votar, y si querés que sea ella la
+        que te <strong>represente en esa mesa</strong>.</p>
 
-      <p class="criterio-cierre">Aplicá esos criterios a <strong>todas las candidaturas</strong>. Si
-        después de mirarlas te convence alguna, votala. Las votaciones son nominales (se vota por persona, no por chapa).</p>
-      <p class="criterio-cierre">Lo que no conviene es votar sin mirar: el Consejo decide igual, con o sin nosotros
-        prestando atención.</p>
+      <p class="criterio-cierre">Aplicá esos criterios a <strong>todas las candidaturas</strong>. Si después de
+        mirarlas te convence alguna, votala. Las votaciones son nominales.</p>
     </div>
   </section>
 
-  <!-- ===================== SOBRE MÍ ===================== -->
-  <section id="sobre">
+  <!-- ===================== REPRESENTANTES ===================== -->
+  <section id="representantes">
     <div class="contenedor">
-      <h2>Quién soy</h2>
-      <div class="sobre-grid">
-        <div class="sobre-texto">
-          <p>Soy Micaela González, estudiante de Ingeniería Civil en la FIUNA, y me postulo como <strong>Representante
-            Estudiantil Suplente ante el Consejo Directivo</strong> por Ingeniería Avanza.</p>
-          <p>En estos años en la FIUNA me fui involucrando en varios ámbitos: <strong>voluntariado, docencia, investigación
-            y liderazgo de equipos estudiantiles</strong>.</p>
-          <p>Estando en eso me di cuenta de algo: <strong>las decisiones que generan un cambio real en el estudiantado se
-            toman en el Consejo Directivo</strong>.</p>
-          <p>Me presento como suplente para estar cuando haga falta, escuchar lo que pasa en los cursos y llevarlo a esa mesa. Y también para acercarles algo que hoy circula disperso: las<strong>&nbsp;oportunidades de aprendizaje,
-            vinculación con empresas, investigación y movilidad</strong> que se pueden impulsar desde ahí.</p>
-          <p>Cualquier problema o propuesta que te surja como estudiante, quiero que sepas que <strong>estoy dispuesta a
-            escucharte y trabajar juntos</strong>.</p>
+      <h2>¿Qué hace un<br><em>representante estudiantil</em>?</h2>
+      <p class="bajada">El Estatuto de la UNA reserva lugares para estudiantes en los órganos que gobiernan la
+        Facultad y la Universidad. <strong>No son cargos simbólicos: ahí se vota y se decide.</strong></p>
+
+      <div class="rep-grid">
+        <div class="rep-card">
+          <h3>¿Quiénes son?</h3>
+          <p>Estudiantes elegidos por sus pares. Se sientan en la misma mesa que los docentes, los graduados y las
+            autoridades, y <strong>tienen voto en cada decisión</strong>.</p>
         </div>
-        <aside class="sobre-aside">
-          <div class="sobre-foto">
-            
-            <span class="foto-fallback" aria-hidden="true">MG</span>
-          </div>
-
-          <div class="datos-rapidos">
-          <div class="dato">
-            <span class="dato-valor">+5</span>
-            <span class="dato-texto">organizaciones estudiantiles y voluntariados en los que participo</span>
-          </div>
-          <div class="dato">
-            <span class="dato-valor">2</span>
-            <span class="dato-texto">años representando cursos y equipos dentro de la facultad</span>
-          </div>
-          </div>
-        </aside>
-      </div>
-
-      <div class="trayectoria" id="trayectoria">
-        <div class="tray-grupo">
-          <h3>Equipos estudiantiles</h3>
-          <ul class="tray-lista">
-            <li>Delegada de 5.º semestre, Ingeniería Civil (2026/02)</li>
-            <li>Sub-delegada de 2.º semestre, Ingeniería Civil (2025/01)</li>
-            <li>Vicepresidenta de la RAS IEEE UNA (2026-2027)</li>
-            <li>Comités de Proyectos, Cursos y Charlas de la RAS IEEE UNA (2025-2026)</li>
-            <li>Subsecretaria de Extensión del CEI (2026-2027)</li>
-            <li>Subsecretaria de Acción Social del CEI (2025-2026)</li>
-            <li>Miembro del grupo de afinidad Women in Engineering (WIE) IEEE UNA desde 2025</li>
-          </ul>
+        <div class="rep-card">
+          <h3>¿Cuánto duran?</h3>
+          <p>El mandato estudiantil es de <strong>dos años</strong>. Los docentes y los graduados duran tres.</p>
         </div>
-
-        <div class="tray-grupo">
-          <h3>Academia y guía académica</h3>
-          <ul class="tray-lista">
-            <li>Auxiliar de la cátedra de Álgebra Lineal (2026/01)</li>
-            <li>Miembro del Programa de Iniciación Científica del Laboratorio de Geotecnia y Materiales
-              Bituminosos (2026)</li>
-            <li>Expositora en modalidad póster en el X Encuentro de Investigadores de la Sociedad Científica del
-              Paraguay, como parte de un proyecto de investigación en la UNA (2025)</li>
-            <li>Profesora voluntaria del Cursillo Intensivo Gratuito Becas Gobierno del Paraguay (2025 y 2026)</li>
-            <li>Voluntaria del programa Padrinos para ingresantes (2026)</li>
-          </ul>
+        <div class="rep-card">
+          <h3>¿Qué es ser suplente?</h3>
+          <p>Los suplentes se eligen en el mismo acto y de la misma forma que los titulares, y <strong>ocupan el
+            lugar cuando un titular no puede estar</strong>. Además trabajan junto a los titulares para impulsar los
+            cambios y <strong>tienen voz en el Consejo</strong>.</p>
         </div>
-
-        <div class="tray-grupo tray-oculto">
-          <h3>Deporte y cultura</h3>
-          <ul class="tray-lista">
-            <li>Delegada del equipo de Básquet Femenino en los Juegos Universitarios desde 2025</li>
-            <li>Profesora elemental de danza paraguaya y española desde 2022</li>
-          </ul>
-        </div>
-
-        <div class="tray-grupo tray-oculto">
-          <h3>Antes de la facultad</h3>
-          <ul class="tray-lista">
-            <li>Participante del World Leadership Academy de la Junior Chamber International</li>
-            <li>Vicepresidenta del Centro de Estudiantes del Colegio Nacional San Roque González de Santacruz, Coronel
-              Oviedo</li>
-            <li>Secretaria de Actas por Asamblea en la Federación de Estudiantes Secundarios Ovetenses (2021-2022)</li>
-            <li>Ex JT de OMAPA</li>
-            <li>Mención de Honor en la Olimpiada de Mayo</li>
-          </ul>
-        </div>
-      </div>
-      <button class="ver-mas" id="verMas" aria-expanded="false" aria-controls="trayectoria">Ver trayectoria completa</button>
-    </div>
-  </section>
-
-  <!-- ===================== PROPUESTAS =====================
-       Ejes de Ingeniería Avanza + compromisos propios.
-       Cada propuesta lleva su respaldo en el Estatuto de la UNA:
-       el botón "art. ..." despliega la atribución que la habilita.
-       Las propuestas marcadas como pendientes en el documento
-       interno NO están acá hasta que la lista las confirme.
-       ====================================================== -->
-  <section id="propuestas">
-    <div class="contenedor">
-      <h2>Propuestas</h2>
-      <p class="bajada">Estos son los ejes de trabajo de Ingeniería Avanza para el Consejo Directivo. Al lado de cada propuesta está <strong>el
-        artículo del Estatuto que le da al Consejo la atribución para decidirla</strong>: tocalo y se despliega.</p>
-
-      <div class="props-grid">
-        <details class="prop-eje">
-          <summary>Académico</summary>
-          <ul class="prop-lista">
-            <li>Promover la <strong>revisión íntegra de los planes curriculares</strong> de cada carrera.
-              <button class="art" type="button" aria-expanded="false">art. 56 c, d</button>
-              <span class="art-nota">El Consejo aprueba los proyectos académicos de la Facultad y los programas de
-                estudios, y los somete a homologación del Consejo Superior Universitario.</span>
-            </li>
-            <li>Impulsar la <strong>reglamentación de sanciones ante el incumplimiento del reglamento académico</strong>.
-              <button class="art" type="button" aria-expanded="false">art. 56 m, t</button>
-              <span class="art-nota">El Consejo aprueba los reglamentos internos de la Facultad, dicta resoluciones y
-                aplica las sanciones inherentes a sus atribuciones.</span>
-            </li>
-            <li>Impulsar la creación de un <strong>protocolo para la intervención de cátedras conflictivas</strong>.
-              <button class="art" type="button" aria-expanded="false">art. 56 d, m, t</button><span class="art-nota">El Consejo aprueba los reglamentos de cátedra y los reglamentos internos de la Facultad: ahí se define qué pasa cuando una cátedra se desordena y qué se hace al respecto. Y es el Consejo el que dicta las resoluciones y aplica las sanciones inherentes a sus atribuciones.</span>
-            </li>
-            <li>Impulsar el pedido de <strong>separación de los parciales de materias complementarias a una tercera semana diferente a
-              las semanas de troncales</strong>.
-              <button class="art" type="button" aria-expanded="false">art. 56 n</button>
-              <span class="art-nota">El Consejo establece el calendario académico de la Facultad.</span>
-            </li>
-            <li>Promover la <strong>optimización y automatización de la socialización de información sobre los procesos de
-              Pasantía</strong>, brindando el seguimiento necesario y acompañando en el proceso, de tal forma que la comunicación llegue a todos los habilitados a Pasa.
-              <button class="art" type="button" aria-expanded="false">art. 56 l, m</button>
-              <span class="art-nota">El Consejo aprueba los reglamentos aplicados en la Facultad y sus reglamentos
-                internos, que es donde se define cómo funcionan estos procesos.</span>
-            </li>
-            <li>Optimizar y facilitar la información sobre los procesos de <strong>intercambios y convalidación de materias</strong>,
-              brindando el seguimiento necesario y acompañando en el proceso.
-              <button class="art" type="button" aria-expanded="false">art. 147 i, j</button>
-              <span class="art-nota">Es derecho del estudiante acceder a la movilidad académica y convalidar
-                asignaturas o créditos obtenidos en otras carreras o instituciones con convenio vigente.</span>
-            </li>
-            <li>Impulsar la <strong>optimización del portal web y del mecanismo de carga de calificaciones al sistema InsWeb</strong>.
-              <button class="art" type="button" aria-expanded="false">art. 56 o, q</button>
-              <span class="art-nota">La ejecución es del Decanato. El Consejo establece la estructura orgánica
-                administrativa y aprueba el anteproyecto de presupuesto anual, que es la vía para exigirlo.</span>
-            </li>
-          </ul>
-        </details>
-
-        <details class="prop-eje">
-          <summary>Transparencia y gestión</summary>
-          <ul class="prop-lista">
-            <li>Acompañar y dar seguimiento al <strong>proceso de acreditación de las carreras de grado de la FIUNA</strong>,
-              promoviendo la participación activa de la comunidad académica y estudiantil y garantizando la difusión
-              clara y oportuna de los avances del proceso.
-              <button class="art" type="button" aria-expanded="false">art. 56 u</button>
-              <span class="art-nota">Es atribución del Consejo impulsar el cumplimiento de las exigencias previstas
-                para la evaluación y acreditación de las carreras de grado y los programas de postgrado.</span>
-            </li>
-            <li>Mejorar la comunicación y socialización de las <strong>asistencias de los representantes estudiantiles a las
-              sesiones del Consejo Directivo</strong>, con un portal donde se vean en tiempo real.
-              <button class="art" type="button" aria-expanded="false">art. 57</button>
-              <span class="art-nota">El Consejo sesiona en forma ordinaria al menos dos veces al mes. Publicar la
-                asistencia no requiere permiso de nadie: es un compromiso de la representación estudiantil.</span>
-            </li>
-            <li>Publicar un <strong>reporte trimestral al estudiantado</strong> sobre las decisiones y resoluciones del Consejo
-              Directivo que impacten en la vida académica.
-              <button class="art" type="button" aria-expanded="false">art. 56 t</button>
-              <span class="art-nota">El Consejo dicta resoluciones. Comunicarlas de forma entendible es un compromiso
-                propio de la representación estudiantil.</span>
-            </li>
-            <li>Promover la permanente <strong>digitalización de actas y resoluciones del Consejo Directivo</strong> publicadas en los
-              medios oficiales de la facultad, en formato buscable.
-              <button class="art" type="button" aria-expanded="false">art. 56 m, t</button>
-              <span class="art-nota">El Consejo aprueba los reglamentos internos y procede a su comunicación, y dicta
-                las resoluciones de la Facultad.</span>
-            </li>
-            <li>Promover la <strong>reestructuración de la encuesta docente</strong> que completan los alumnos y también la que
-              completan los docentes.
-              <button class="art" type="button" aria-expanded="false">art. 146 g · 56 m</button>
-              <span class="art-nota">Es deber del estudiante participar en el proceso de evaluación de desempeño de
-                los profesores, y el Consejo aprueba los reglamentos internos donde ese proceso se define.</span>
-            </li>
-            <li>Mantener actualizadas las <strong>redes sociales de representación estudiantil</strong>, para asegurar una comunicación
-              fluida y la difusión de resoluciones y avisos.
-              <button class="art" type="button" aria-expanded="false">compromiso propio</button>
-              <span class="art-nota">No depende de una atribución del Consejo: depende de que quien resulte electo lo
-                sostenga durante los dos años de mandato.</span>
-            </li>
-            <li>Brindar <strong>acompañamiento, en todas las instancias que nos competen, a los compañeros que tengan
-              problemas</strong> por injusticias o fallos en los procesos administrativos de la facultad.
-              <button class="art" type="button" aria-expanded="false">art. 147 h</button>
-              <span class="art-nota">Es derecho del estudiante ser promovido, egresar y titularse sin discriminación
-                de naturaleza alguna, conforme a sus méritos académicos.</span>
-            </li>
-          </ul>
-        </details>
-
-        <details class="prop-eje">
-          <summary>Innovación e investigación</summary>
-          <ul class="prop-lista">
-            <li>Creación de un <strong>canal de investigación e innovación</strong>: todas las convocatorias abiertas a estudiantes de
-              la FIUNA —becas, fondos, semilleros, congresos y vacantes de auxiliar de investigación— publicadas en un
-              solo lugar.
-              <button class="art" type="button" aria-expanded="false">compromiso propio</button>
-              <span class="art-nota">No hace falta una resolución para reunir y publicar lo que hoy circula
-                disperso. Se puede empezar apenas asumido el cargo. De hecho ya lo estuvimos haciendo varios alumnos, pero ahora será un canal oficial.</span>
-            </li>
-            <li>Fomentar la creación de <strong>nuevos proyectos académicos, talleres y espacios de investigación</strong> que
-              respondan a las necesidades de la Facultad e impulsen la vinculación con empresas e instituciones del
-              sector de la ingeniería.
-              <button class="art" type="button" aria-expanded="false">art. 56 c</button>
-              <span class="art-nota">El Consejo aprueba los proyectos académicos de la Facultad y los somete a la
-                homologación del Consejo Superior Universitario.</span>
-            </li>
-            <li>Gestionar <strong>acuerdos con las empresas proveedoras de los softwares</strong> de vanguardia que se usan en cada
-              carrera, para la obtención de licencias.
-              <button class="art" type="button" aria-expanded="false">art. 56 q</button>
-              <span class="art-nota">El convenio lo firma el Decanato, pero el Consejo aprueba el anteproyecto de
-                presupuesto anual, que es donde estas licencias entran o quedan afuera.</span>
-            </li>
-          </ul>
-        </details>
-
-        <details class="prop-eje">
-          <summary>Infraestructura</summary>
-          <ul class="prop-lista">
-            <li>Gestionar el <strong>mantenimiento preventivo y la renovación gradual del equipamiento de los distintos
-              laboratorios</strong>, para asegurar prácticas de calidad.
-              <button class="art" type="button" aria-expanded="false">art. 56 q · 147 a</button>
-              <span class="art-nota">El Consejo aprueba el anteproyecto de presupuesto anual, y es derecho del
-                estudiante recibir una sólida formación profesional integral.</span>
-            </li>
-            <li>Gestionar la disponibilidad de los <strong>suministros y el horario de atención de la enfermería</strong>, necesarios
-              para brindar una atención adecuada y oportuna a estudiantes y funcionarios.
-              <button class="art" type="button" aria-expanded="false">art. 56 q</button>
-              <span class="art-nota">La ejecución es del Decanato. El Consejo lo alcanza a través del presupuesto
-                anual que aprueba cada año.</span>
-            </li>
-            <li>Propulsar el <strong>mantenimiento y la unificación del sistema de seguridad</strong> relacionado a las cámaras
-              disponibles en los distintos sectores de la facultad.
-              <button class="art" type="button" aria-expanded="false">art. 56 q</button>
-              <span class="art-nota">Misma vía: es una decisión de ejecución del Decanato que depende de que el
-                presupuesto aprobado por el Consejo la contemple.</span>
-            </li>
-          </ul>
-        </details>
-      </div>
-
-      <div class="prop-aviso">
-        <h3>¿Qué le falta a tu carrera?</h3>
-        <p>Si hay algo que en tu semestre se arrastra hace tiempo, contámelo. Las propuestas de esta campaña se
-          construyen con lo que pasa en las aulas, no en una reunión cerrada con pocas personas.</p>
-        <a class="boton boton-azul" href="https://wa.link/pgm0n4" target="_blank" rel="noopener">Mandar una propuesta</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== CONSEJO DIRECTIVO =====================
-       Textos basados en el Estatuto de la UNA, Capítulo IV,
-       artículos 48 a 57.
-       ============================================================== -->
-  <section id="consejo">
-    <div class="contenedor">
-      <h2>¿Qué es el Consejo Directivo?</h2>
-      <p class="bajada">Mucha gente vota sin saber qué se decide acá. Es el órgano que gobierna la Facultad: <strong>sesiona al
-        menos dos veces al mes</strong> y de ahí salen las decisiones que tocan tu carrera todos los días.</p>
-
-      <div class="consejo-grid">
-        <div class="consejo-card">
-          <h3>Quiénes lo integran</h3>
-          <p><strong>El Decano, el Vicedecano, seis docentes, tres graduados y tres estudiantes</strong>. Los tres estudiantes son
-            elegidos por sus pares, y cada titular tiene su suplente, elegido en el mismo acto y de la misma forma.</p>
-        </div>
-        <div class="consejo-card">
-          <h3>Qué decide</h3>
-          <p><strong>Elige al Decano y al Vicedecano</strong>. Aprueba los programas de estudio y los reglamentos de cátedra, el
-            calendario académico, los aranceles y el presupuesto anual. Nombra profesores y auxiliares de enseñanza.</p>
-        </div>
-        <div class="consejo-card">
-          <h3>Y también</h3>
-          <ul class="consejo-lista">
-            <li>Impulsa la evaluación y acreditación de las carreras.</li>
-            <li>Recibe y publica la rendición de cuentas del Decano.</li>
-            <li>Establece el régimen de admisión, permanencia, promoción y egreso de los estudiantes.</li>
-          </ul>
-        </div>
-        <div class="consejo-card">
-          <h3>Qué es ser suplente</h3>
-          <p>Los suplentes se eligen en el mismo acto y de la misma forma que los titulares, y <strong>ocupan el lugar cuando
-            un titular no puede estar</strong>. Sin suplentes no hay cómo sostener el cuórum: para sesionar hace falta la mitad
-            más uno de los miembros. El mandato estudiantil dura dos años.</p>
+        <div class="rep-card">
+          <h3>¿Qué se espera de ellos?</h3>
+          <p>El propio Estatuto lo pone como un deber: <strong>representar a sus pares de manera objetiva,
+            responsable y honesta</strong>, y participar en la evaluación de desempeño de los profesores.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== DERECHOS =====================
-       Cada tarjeta cruza un derecho del artículo 147 del Estatuto
-       con una atribución concreta del Consejo Directivo (art. 56).
+  <!-- ===================== MÁS INFO =====================
+       Enlaces a las publicaciones de Instagram del movimiento.
        ===================================================== -->
-  <section id="derechos">
+  <section id="mas">
     <div class="contenedor">
-      <h2>Los derechos que se defienden desde el Consejo</h2>
-      <p class="bajada">El Estatuto te da derechos concretos como estudiante. <strong>Estos son los que el Consejo Directivo
-        puede hacer cumplir con sus propias atribuciones</strong>, así que son los que me comprometo a mirar de cerca.</p>
+      <h2>Para saber más</h2>
+      <p class="bajada">El detalle está en el Instagram de Ingeniería Avanza. Cada enlace abre la publicación
+        correspondiente.</p>
 
-      <button class="ver-mas" id="verDerechos" aria-expanded="false" aria-controls="derechosGrid" style="margin-top:1.5rem;">Derechos que vamos a defender</button>
-
-      <div class="derechos-grid oculta" id="derechosGrid">
-        <div class="derecho-card">
-          <h3>Que la plata de la Facultad se explique</h3>
-          <p>Tenés derecho a acceder a becas y apoyos en condiciones de igualdad. El Consejo fija los aranceles,
-            aprueba el presupuesto anual y recibe la rendición de cuentas del Decano, que debe controlar y publicar.</p>
-          <span class="derecho-ref">Estatuto UNA, art. 147 inciso e y art. 56 incisos k, q, r</span>
-        </div>
-        <div class="derecho-card">
-          <h3>Que no pierdas la carrera por un año difícil</h3>
-          <p>La matrícula se cancela al superar el doble de la duración nominal de la carrera, salvo excepciones por
-            impedimentos justificados. Esas excepciones las resuelve el Consejo Directivo, caso por caso, y merecen un
-            criterio claro y humano.</p>
-          <span class="derecho-ref">Estatuto UNA, art. 145</span>
-        </div>
-        <div class="derecho-card">
-          <h3>Que las cátedras tengan docentes y auxiliares</h3>
-          <p>Tenés derecho a contar con profesores calificados, con formación para la docencia universitaria y con
-            dedicación horaria adecuada al programa que cursás. El Consejo propone los nombramientos docentes y nombra
-            a los auxiliares de enseñanza.</p>
-          <span class="derecho-ref">Estatuto UNA, art. 147 inciso b</span>
-        </div>
-        <div class="derecho-card">
-          <h3>Que tus evaluaciones se puedan revisar</h3>
-          <p>Tenés derecho a conocer tu desempeño académico y a que las evaluaciones puedan revisarse, y a recusar por
-            escrito y con causa a los miembros de un tribunal examinador. El Consejo es el que aprueba los reglamentos
-            de cátedra y los reglamentos internos donde eso se aplica.</p>
-          <span class="derecho-ref">Estatuto UNA, art. 147 incisos d y k</span>
-        </div>
-        <div class="derecho-card">
-          <h3>Que te convaliden lo que ya aprobaste</h3>
-          <p>Tenés derecho a convalidar y homologar asignaturas o créditos de otras carreras e instituciones con
-            convenio vigente, y a la movilidad académica dentro de la UNA. El Consejo aprueba los proyectos académicos
-            y los reglamentos que hacen que eso funcione o se trabe.</p>
-          <span class="derecho-ref">Estatuto UNA, art. 147 incisos i y j</span>
-        </div>
-        <div class="derecho-card">
-          <h3>Que promover y egresar dependa de tus méritos</h3>
-          <p>Tenés derecho a ser promovido, egresar y titularte sin discriminación de ninguna naturaleza, según tus
-            méritos académicos. El régimen de admisión, permanencia, promoción y egreso lo establece el Consejo.</p>
-          <span class="derecho-ref">Estatuto UNA, art. 147 inciso h</span>
-        </div>
+      <div class="link-grid">
+        <a class="link-card" href="https://www.instagram.com/p/Ddw7svnlKRG/" target="_blank" rel="noopener">
+          <span class="link-tipo">Explicación</span>
+          <span class="link-titulo">¿Qué es el Consejo Directivo?</span>
+          <span class="link-ir">Ver publicación →</span>
+        </a>
+        <a class="link-card" href="https://www.instagram.com/p/Dd6sJANFDuh/" target="_blank" rel="noopener">
+          <span class="link-tipo">Propuestas</span>
+          <span class="link-titulo">Transparencia y gestión</span>
+          <span class="link-ir">Ver publicación →</span>
+        </a>
+        <a class="link-card" href="https://www.instagram.com/p/Dd6r4xElGhU/" target="_blank" rel="noopener">
+          <span class="link-tipo">Propuestas</span>
+          <span class="link-titulo">Académico</span>
+          <span class="link-ir">Ver publicación →</span>
+        </a>
+        <a class="link-card" href="https://www.instagram.com/p/Dd6rGShlG6v/" target="_blank" rel="noopener">
+          <span class="link-tipo">Propuestas</span>
+          <span class="link-titulo">Innovación, investigación e infraestructura</span>
+          <span class="link-ir">Ver publicación →</span>
+        </a>
       </div>
-
-      <p class="derechos-cierre">El propio Estatuto dice que es deber del estudiante <span>representar a sus pares en
-          los órganos de gobierno de manera objetiva, responsable y honesta</span>. Esa es la vara con la que queremos
-        ser medidos.</p>
     </div>
   </section>
 
   <!-- ===================== VOTACIÓN ===================== -->
   <section id="votacion">
     <div class="contenedor">
-      <h2>Cómo y dónde votar</h2>
+      <h2>¿Cómo y dónde votar?</h2>
       <p class="bajada">Podés votar si sos estudiante de la FIUNA y <strong>aprobaste las asignaturas del primer año de tu
         carrera</strong>, o una cantidad equivalente. Anotá la fecha.</p>
 
@@ -1497,14 +915,26 @@
             primeros semestres, o dos años, o un número equivalente de asignaturas de su carrera.</p>
         </details>
         <details>
-          <summary>¿Cómo me sumo a la campaña?</summary>
-          <p>Entrando al grupo de WhatsApp o escribiéndome por privado. Estamos abiertos a escuchar todas las ideas,
-            propuestas o problemas del estudiantado.</p>
+          <summary>¿Cómo averiguo más?</summary>
+          <p>Escribiéndonos, o acercándote a nuestro stand a charlar y compartir con nosotros.</p>
         </details>
-        <details>
-          <summary>¿Puedo proponer algo aunque no sea de mi carrera?</summary>
-          <p>Sí. El Consejo Directivo decide sobre la Facultad entera, así que las siete carreras cuentan igual.</p>
-        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EQUIPO ===================== -->
+  <section id="equipo">
+    <div class="contenedor">
+      <div class="equipo-caja">
+        <h2>Conocé a todo el equipo de <em>Ingeniería Avanza</em></h2>
+        <p>Somos candidatos a los cuatro órganos que se eligen el 23 de octubre. En el Instagram del movimiento
+          están las presentaciones de cada candidato y <strong>todas nuestras propuestas</strong>.</p>
+        <a class="boton" href="https://www.instagram.com/ia_fiuna" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2.2c3.2 0 3.6 0 4.9.07 3.25.15 4.77 1.69 4.92 4.92.06 1.28.07 1.67.07 4.88 0 3.21-.01 3.6-.07 4.88-.15 3.23-1.66 4.77-4.92 4.92-1.28.06-1.67.07-4.9.07-3.2 0-3.6-.01-4.88-.07-3.26-.15-4.77-1.7-4.92-4.92C2.14 15.67 2.13 15.28 2.13 12c0-3.2.01-3.6.07-4.88.15-3.23 1.66-4.77 4.92-4.92C8.4 2.14 8.8 2.13 12 2.13zm0 5.64a4.16 4.16 0 1 0 0 8.32 4.16 4.16 0 0 0 0-8.32zm0 6.86a2.7 2.7 0 1 1 0-5.4 2.7 2.7 0 0 1 0 5.4zm5.3-8c0 .54-.43.97-.97.97a.97.97 0 1 1 .97-.97z"/>
+          </svg>
+          Ver el Instagram del movimiento
+        </a>
       </div>
     </div>
   </section>
@@ -1518,13 +948,14 @@
         ver qué se está moviendo.</p>
       <div class="sumate-acciones">
         <button class="boton" data-abrir="modal-form">Quiero sumarme</button>
-        <a href="https://chat.whatsapp.com/DypwSko9vZY8fsBwP9GXX3" target="_blank" rel="noopener" class="boton-borde">Grupo de Ingeniería Avanza</a>
+        <a href="https://chat.whatsapp.com/DypwSko9vZY8fsBwP9GXX3" target="_blank" rel="noopener"
+          class="boton-borde">Grupo de Ingeniería Avanza</a>
       </div>
     </div>
   </section>
 
   <footer>
-    <img src="img/logo-ingenieria-avanza.png" alt="Ingeniería Avanza" class="footer-logo" onerror="this.style.display='none'">
+    <img src="img/logo-ingenieria-avanza.png" alt="Ingeniería Avanza" class="footer-logo">
     <p class="footer-nombre">Micaela González</p>
     <p>Candidata a Representante Estudiantil Suplente · Consejo Directivo FIUNA · Ingeniería Avanza</p>
     <p style="opacity:.6;margin-top:.5rem;">Elecciones del 23 de octubre de 2026</p>
@@ -1533,7 +964,7 @@
 
   <a class="flotante" href="https://wa.link/koiwsc" target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
     </svg>
     Escribime
   </a>
@@ -1541,7 +972,7 @@
   <!-- ===================== MODAL FORMULARIO ===================== -->
   <div class="modal" id="modal-form" role="dialog" aria-modal="true" aria-labelledby="modal-form-titulo">
     <div class="modal-caja">
-      <button class="modal-cerrar" data-cerrar="" aria-label="Cerrar">✕</button>
+      <button class="modal-cerrar" data-cerrar aria-label="Cerrar">&#x2715;</button>
       <h3 id="modal-form-titulo">Sumate o mandá tu propuesta</h3>
       <p id="modal-form-texto">Dejame tus datos y te escribo. Toma menos de un minuto.</p>
       <div id="modal-form-contenido"></div>
@@ -1610,34 +1041,6 @@
     actualizarCuenta();
     setInterval(actualizarCuenta, 1000);
 
-    // --- Trayectoria completa ---
-    const verMas = document.getElementById('verMas');
-    const trayectoria = document.getElementById('trayectoria');
-
-    verMas.addEventListener('click', () => {
-      const expandida = trayectoria.classList.toggle('expandida');
-      verMas.textContent = expandida ? 'Ver menos' : 'Ver trayectoria completa';
-      verMas.setAttribute('aria-expanded', String(expandida));
-    });
-
-    // --- Derechos plegables ---
-    const verDerechos = document.getElementById('verDerechos');
-    const derechosGrid = document.getElementById('derechosGrid');
-
-    verDerechos.addEventListener('click', () => {
-      const abierto = derechosGrid.classList.toggle('oculta') === false;
-      verDerechos.textContent = abierto ? 'Ocultar' : 'Derechos que vamos a defender';
-      verDerechos.setAttribute('aria-expanded', String(abierto));
-    });
-
-    // --- Referencias al Estatuto ---
-    document.querySelectorAll('.art').forEach(b => {
-      b.addEventListener('click', () => {
-        const abierto = b.getAttribute('aria-expanded') === 'true';
-        b.setAttribute('aria-expanded', String(!abierto));
-      });
-    });
-
     // --- Modal ---
     const modal = document.getElementById('modal-form');
     let focoAntesModal;
@@ -1670,7 +1073,6 @@
     document.addEventListener('keydown', e => { if (e.key === 'Escape') { cerrarModal(); alternarMenu(true); } });
   </script>
 
+</body>
 
-
-
-</body></html>
+</html>
